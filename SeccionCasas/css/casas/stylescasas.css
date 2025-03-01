@@ -1,0 +1,111 @@
+.containerSectionText {
+    background-color: #fff;
+    height: 24vh;
+    width: 100%;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+}
+
+.rectangle {
+    position: absolute;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 15px 0px 0px 15px;
+    right: 0;
+    width: 5vw;
+    height: 20vh;
+    z-index: 10;
+    background-color: #f6c42a;
+    overflow: hidden;
+    transition: width 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    white-space: normal;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 2s, max-height 6s ease-in-out;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+.rectangle .text h1 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 2em;
+    color: #333333;
+    text-align: center;
+}
+
+.rectangle .text p {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2em;
+    text-align:  end;
+    color: #333333;
+}
+
+.rectangle.expand {
+    width: 66.66%;
+    max-width: 66.6vw;
+}
+
+.rectangle.expand .text {
+    opacity: 1;
+}
+
+.prueba {
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 0;
+    width: 100vh;
+    height: 30vh;
+    background-color: rgb(43, 150, 61);
+}
+
+.prueba2 {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    right: 0;
+    width: 100vh;
+    /* Ancho inicial */
+    height: 30vh;
+    /* Altura completa de la ventana */
+    background-color: rgb(10, 17, 85);
+}
+
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+
+    .containerSectionText{
+        height: 18vh;
+    }
+
+    .rectangle{
+        height: 13vh;
+    }
+
+    .text {
+        transition: opacity 0.5s ease-in-out 2s, max-height 3s ease-in-out;
+    }
+    .rectangle .text h1 {
+        font-size: 0.8em;
+        /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+
+    .rectangle .text p {
+        font-size: 0.5em;
+        /* Reduce el tamaño del párrafo en pantallas pequeñas */
+    }
+}
