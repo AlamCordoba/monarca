@@ -1,0 +1,28 @@
+:root{
+    /*colores a utilizar*/
+    --color-amarillo:#f6c42a;
+    --color-gris:#606060;
+    --blanco: #fff;
+    /*color texto*/
+    --color-texto:#333333;
+    /*fuentes de texto*/
+    --titulos:"Roboto", sans-serif;
+    --texto: "Rubik", sans-serif;
+
+}
+
+h1 {
+    font-family: var(--titulos);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+p {
+    font-family: var(--texto);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
