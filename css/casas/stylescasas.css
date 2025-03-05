@@ -1,5 +1,19 @@
+:root{
+    /*colores a utilizar*/
+    --color-amarillo:#f6c42a;
+    --color-gris:#606060;
+    --blanco: #fff;
+    /*color texto*/
+    --color-texto:#333333;
+    /*fuentes de texto*/
+    --titulos:"Roboto", sans-serif;
+    --texto: "Rubik", sans-serif;
+
+}
+
+/*CSS para el rectangulo de información amarillo*/
 .containerSectionText {
-    background-color: #fff;
+    background-color: var(--blanco);
     height: 24vh;
     width: 100%;
     margin-bottom: 2vh;
@@ -17,7 +31,7 @@
     width: 5vw;
     height: 20vh;
     z-index: 10;
-    background-color: #f6c42a;
+    background-color: var(--color-amarillo);
     overflow: hidden;
     transition: width 2s ease-in-out;
     display: flex;
@@ -28,31 +42,31 @@
 .text {
     white-space: normal;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out 2s, max-height 6s ease-in-out;
+    transition: opacity 0.5s ease-in-out 2s, max-height 3s ease-in-out;
     margin-right: 5vw;
     margin-left: 5vw;
 }
 
 .rectangle .text h1 {
-    font-family: "Roboto", sans-serif;
+    font-family: var(--titulos);
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
-    font-size: 2em;
-    color: #333333;
+    font-size: 1.8em;
+    color: var(--color-texto);
     text-align: center;
 }
 
 .rectangle .text p {
-    font-family: "Rubik", sans-serif;
+    font-family: var(--texto);
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align:  end;
-    color: #333333;
+    color: var(--color-texto);
 }
 
 .rectangle.expand {
@@ -63,6 +77,182 @@
 .rectangle.expand .text {
     opacity: 1;
 }
+
+/* MEDIA QUERY PARA PANTALLAS PEQUEÑAS*/
+@media (max-width: 600px) {
+
+    .containerSectionText{
+        height: 18vh;
+    }
+
+    .rectangle{
+        height: 16vh;
+    }
+
+    .rectangle .text h1 {
+        font-size: 0.8em;
+        /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+
+    .rectangle .text p {
+        font-size: 0.6em;
+        /* Reduce el tamaño del párrafo en pantallas pequeñas */
+    }
+}
+
+@media (max-height:600px) {
+
+    .containerSectionText{
+        height: 28vh;
+    }
+
+    .rectangle{
+        height: 24vh;
+    }
+
+    .rectangle .text h1 {
+        font-size: 0.8em;
+        /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+
+    .rectangle .text p {
+        font-size: 0.6em;
+        /* Reduce el tamaño del párrafo en pantallas pequeñas */
+    }
+}
+
+/*CSS para el carrusel de los trabajadores de la constructora*/
+
+.slideContainer{
+    position: static;
+    width: 100vw;
+    height: 60vh;
+    /*margin-top: 5vh;
+    margin-bottom: 5vh;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgContainer{
+    width: 100%;
+    height: 60vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.slide_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2vw 0 2vw;
+}
+
+.imgSlider{
+    position: relative;
+    width: 14vw;
+    height: 44vh;
+    filter: saturate(10%);
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.button{
+    position:absolute;
+    width: 14vw;
+    height: 44vh;
+    transition: 0.7s;
+    background-color: rgb(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+#slider1:target ~ .imgContainer #img1,
+#slider1:target ~ .imgContainer #button1{
+    height: 56vh;
+    width: 18vw; 
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider2:target ~ .imgContainer #img2,
+#slider2:target ~ .imgContainer #button2{
+    height: 56vh;
+    width: 18vw; 
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider3:target ~ .imgContainer #img3,
+#slider3:target ~ .imgContainer #button3{
+    height: 56vh;
+    width: 18vw;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider4:target ~ .imgContainer #img4,
+#slider4:target ~ .imgContainer #button4{
+    height: 56vh;
+    width: 18vw;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider5:target ~ .imgContainer #img5,
+#slider5:target ~ .imgContainer #button5{
+    height: 56vh;
+    width: 18vw;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider6:target ~ .imgContainer #img6,
+#slider6:target ~ .imgContainer #button6{
+    height: 56vh;
+    width: 18vw;
+    background-color: transparent;
+    filter: saturate(100%);
+} 
+
+#slider1:target ~ .imgContainer{
+    left: 60%;
+}
+
+#slider2:target ~ .imgContainer{
+    left: 40%;
+}
+
+#slider3:target ~ .imgContainer{
+    left: 20%;
+}
+
+#slider4:target ~ .imgContainer{
+    left: 0%;
+}
+
+#slider5:target ~ .imgContainer{
+    left: -20%;
+}
+
+#slider6:target ~ .imgContainer{
+    left: -40%;
+}
+
+
 
 .prueba {
     margin-top: auto;
@@ -85,27 +275,3 @@
 }
 
 
-/* Media query para pantallas más pequeñas */
-@media (max-width: 600px) {
-
-    .containerSectionText{
-        height: 18vh;
-    }
-
-    .rectangle{
-        height: 13vh;
-    }
-
-    .text {
-        transition: opacity 0.5s ease-in-out 2s, max-height 3s ease-in-out;
-    }
-    .rectangle .text h1 {
-        font-size: 0.8em;
-        /* Reduce el tamaño del título en pantallas pequeñas */
-    }
-
-    .rectangle .text p {
-        font-size: 0.5em;
-        /* Reduce el tamaño del párrafo en pantallas pequeñas */
-    }
-}
