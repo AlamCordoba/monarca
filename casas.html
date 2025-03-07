@@ -1,149 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="css/casas/stylescasas.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Casas Monarca</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="css/casas/stylescasas.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <title>Casas Monarca</title>
-</head>
-
-<body>
-  <header class="header">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-
-  <section>
-    <!--Esta es el area del carrusel automatico-->
-      <div class="carousel slide mx-auto" style="width: 100%;" data-bs-ride="carousel">
+    <section>
+      <!--Esta es el area del carrusel automatico-->
+      <div
+        class="carousel slide mx-auto"
+        style="width: 100%"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/img/casas/RenderCasas1webp.webp" class="d-block w-100" alt="Render1">
+            <img
+              src="/img/casas/RenderCasas1webp.webp"
+              class="d-block w-100"
+              alt="Render1"
+            />
           </div>
           <div class="carousel-item">
-            <img src="/img/casas/RenderCasas2webp.webp" class="d-block w-100" alt="Render2">
+            <img
+              src="/img/casas/RenderCasas2webp.webp"
+              class="d-block w-100"
+              alt="Render2"
+            />
           </div>
         </div>
       </div>
 
-    <!--Esta es el area para el texto de la constructora-->
-    <div class="containerSectionText">
-      <div class="rectangle">
-        <div class="text">
-          <h1>SERVICIOS DE CONSTRUCCION</h1>
-          <p>
-            "Construye la casa de tus sueños en nuestro exclusivo residencial.
-            Ofrecemos diseños personalizados y acabados de alta calidad para crear el hogar perfecto para ti."
-          </p>
+      <!--Esta es el area para el texto de la constructora-->
+      <div class="containerSectionText">
+        <div class="rectangle">
+          <div class="text">
+            <h1>SERVICIOS DE CONSTRUCCION</h1>
+            <p>
+              "Construye la casa de tus sueños en nuestro exclusivo residencial.
+              Ofrecemos diseños personalizados y acabados de alta calidad para
+              crear el hogar perfecto para ti."
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-        <!--Esta es la sección del carrusel de las opiniones de los empleados-->
+      <!--Esta es la sección del carrusel de las opiniones de los empleados-->
+
+      <div class="slideContainer">
+        <span class="slider" id="slider1"></span>
+        <span class="slider" id="slider2"></span>
+        <span class="slider" id="slider3"></span>
+        <span class="slider" id="slider4"></span>
+        <span class="slider" id="slider5"></span>
+        <span class="slider" id="slider6"></span>
+
+        <div class="imgContainer">
+          <div class="slide_div" id="slide_1">
+            <img
+              src="img/casas/Fotos Profissionais.jpg"
+              alt=""
+              class="imgSlider"
+              id="img1"
+            />
+            <a
+              href="#slider1"
+              class="button"
+              id="button1"
+              data-text="Info persona 1"
+            ></a>
+            <h1 class="hidden-title">TESTIMONIO 1</h1>
+            <p class="hidden-text">
+              Aqui va la descripción de la primera persona
+            </p>
+          </div>
+          <div class="slide_div" id="slide_2">
+            <img
+              src="img/casas/Free Photo _ Handsome man with laptop.jpg"
+              alt=""
+              class="imgSlider"
+              id="img2"
+            />
+            <a href="#slider2" class="button" id="button2"></a>
+            <h1 class="hidden-title">TESTIMONIO 2</h1>
+            <p class="hidden-text">
+              Aqui va la descripción de la segunda persona
+            </p>
+          </div>
+          <div class="slide_div" id="slide_3">
+            <img
+              src="img/casas/Retrato fotográfico de una joven mujer de negocios segura de sí misma en blanco _ Imagen Premium generada con IA.jpg"
+              alt=""
+              class="imgSlider"
+              id="img3"
+            />
+            <a href="#slider3" class="button" id="button3"></a>
+            <h1 class="hidden-title">TESTIMONIO 3</h1>
+            <p class="hidden-text">
+              Aqui va la descripción de la tercera persona
+            </p>
+          </div>
+          <div class="slide_div" id="slide_4">
+            <img
+              src="img/casas/smile1.jpg"
+              alt=""
+              class="imgSlider"
+              id="img4"
+            />
+            <a href="#slider4" class="button" id="button4"></a>
+            <h1 class="hidden-title">TESTIMONIO 4</h1>
+            <p class="hidden-text">
+              Aqui va la descripción de la cuarta persona
+            </p>
+          </div>
+          <div class="slide_div" id="slide_5">
+            <img
+              src="img/casas/Fotos Profissionais.jpg"
+              alt=""
+              class="imgSlider"
+              id="img5"
+            />
+            <a href="#slider5" class="button" id="button5"></a>
+            <h1 class="hidden-title">TESTIMONIO 5</h1>
+            <p class="hidden-text">
+              Aqui va la descripción de la quinta persona
+            </p>
+          </div>
+          <div class="slide_div" id="slide_6">
+            <img
+              src="img/casas/smile2.jpg"
+              alt=""
+              class="imgSlider"
+              id="img6"
+            />
+            <a href="#slider6" class="button" id="button6"></a>
+            <h1 class="hidden-title">TESTIMONIO 6</h1>
+            <p class="hidden-text">
+              Aqui va la descripción de la sexta persona
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-container">
+        <h1 id="infoTitle">Aqui esta el titulo</h1>
+        <p id="infoText">Haz clic en una imagen para ver información</p>
+      </div>
+
+
+      <!--Esta es la sección del carrusel de las opiniones de los empleados-->
+
+      <div class="containerDescription">
         
-        <div class="slideContainer">
-          <span class="slider" id="slider1"></span>
-          <span class="slider" id="slider2"></span>
-          <span class="slider" id="slider3"></span>
-          <span class="slider" id="slider4"></span>
-          <span class="slider" id="slider5"></span>
-          <span class="slider" id="slider6"></span>
-  
-          <div class="imgContainer">
-              <div class="slide_div" id="slide_1">
-                  <img src="img/casas/Fotos Profissionais.jpg" alt="" class="imgSlider" id="img1">
-                  <a href="#slider1" class="button" id="button1"></a>
-              </div>
-              <div class="slide_div" id="slide_2">
-                  <img src="img/casas/Free Photo _ Handsome man with laptop.jpg" alt="" class="imgSlider" id="img2">
-                  <a href="#slider2" class="button" id="button2"></a>
-              </div>
-              <div class="slide_div" id="slide_3">
-                  <img src="img/casas/Retrato fotográfico de una joven mujer de negocios segura de sí misma en blanco _ Imagen Premium generada con IA.jpg" alt="" class="imgSlider" id="img3">
-                  <a href="#slider3" class="button" id="button3"></a>
-              </div>
-              <div class="slide_div" id="slide_4">
-                  <img src="img/casas/smile1.jpg" alt="" class="imgSlider" id="img4">
-                  <a href="#slider4" class="button" id="button4"></a>
-              </div>
-              <div class="slide_div" id="slide_5">
-                  <img src="img/casas/Fotos Profissionais.jpg" alt="" class="imgSlider" id="img5">
-                  <a href="#slider5" class="button" id="button5"></a>
-              </div>
-              <div class="slide_div" id="slide_6">
-                  <img src="img/casas/smile2.jpg" alt="" class="imgSlider" id="img6">
-                  <a href="#slider6" class="button" id="button6"></a>
-              </div>
-          </div>
       </div>
 
 
-    <div class="prueba">
-    </div>
-    <div class="prueba2"></div>
-    <div class="prueba"></div>
-    <div class="prueba2"></div>
+      
+      <div class="prueba"></div>
+      <div class="prueba2"></div>
+      <div class="prueba"></div>
+      <div class="prueba2"></div>
+    </section>
 
-    
-
-  </section>
-
-
-  <script src="/javascript/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script src="/javascript/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
