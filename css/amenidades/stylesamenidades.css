@@ -11,7 +11,7 @@
 
 }
 
-h1 {
+title {
     font-family: var(--titulos);
     font-optical-sizing: auto;
     font-weight: 500;
@@ -20,9 +20,82 @@ h1 {
         "wdth" 100;
 }
 
-p {
+.monar{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px; /*Espacio entre elementos*/
+    padding: 0;
+}
+
+.M{
+    padding: 0;
+    text-align: center;
+}
+
+.M img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    overflow: hidden;
+    margin-bottom: 2%;
+    
+}
+
+.M p{
     font-family: var(--texto);
-    font-optical-sizing: auto;
+    width: 95%;
+    margin: 0 auto;
     font-weight: 500;
     font-style: normal;
+    text-align: justify;
+    margin-bottom: 2%;
+
 }
+
+.amenidad{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+   padding: 0;
+   background-color: #fff;
+   border-radius: 5px;
+   margin: 0;
+}
+
+.amenidad img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+   
+}
+
+.amenidad h3{
+    background-color: var(--color-amarillo);
+    width: 200px;
+    height: auto;
+    padding: 15px;
+    font-size: 50px;
+    text-transform: uppercase;
+    width: max-content;
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+    
+}
+
+.div .header{
+    border-radius: 8px;
+    grid-template-columns:
+    repeat(auto-fit,
+    minmax(150px, 1fr)
+    );
+    gap: 32px;
+
+
+}
+
