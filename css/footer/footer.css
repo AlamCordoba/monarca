@@ -1,0 +1,126 @@
+:root{
+    /*Colores a utilizar*/
+    --color-principal: #F6C42A;
+    --colo-secundario: #606060;
+    --blanco: #ffffff;
+    --negro: #000000 ;
+    /*Color de textos*/
+
+    --color-de-texto:#333333;
+    /*Fuentes de texto*/
+    --fuente-titulos: "Roboto", sans-serif;  ;
+    --fuente-de-textos:  "Rubik", sans-serif;
+    --fuente-enlace: "Rubik", sans-serif;
+}
+
+
+/*Footer*/
+
+.footer{
+    background-color: var(--colo-secundario);
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    align-items: center;
+    color: var(--negro);
+    text-align: center;
+    align-items: center;
+}
+
+/*Media query para ajustar el contenido en una sola columna*/
+@media (max-width: 768px) {
+   .footer{
+         grid-template-columns: repeat(1, minmax(0,1fr));
+   }
+}
+
+
+
+
+
+/*Diseño del logo*/
+
+
+.menu_footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width:768px) {
+    .menu_footer{
+        display: block;
+    }
+    .enlace_footer{
+        width: 100%;
+    }
+
+    .enlace-imagen_footer{
+        width: 25rem;
+        margin-top: 1rem;
+    }
+}
+
+.enlace_footer{
+    width: 100%;
+}
+
+.enlace-imagen_footer{
+    width: 25rem;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+.titulo-menu_footer{
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+.lista_footer_enlace{
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.lista_footer{
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .lista_footer{
+        display: block;
+        text-align: center;
+        padding: 0;
+        list-style: none;
+    }
+    .menu_footer{
+        display: block;
+        text-align: center;
+        
+    }
+}
+
+/*Diseño de redes sociales footer*/
+
+.redes-sociales ,.redes-sociales__opcion{
+    display: inline-block;
+    color: var(--blanco);
+    text-align: center;
+    font-size: 3rem;
+    margin: px;
+}
+
+
+/*Diseño del apartado de contactanos*/
+.contactanos{
+    text-align: center;
+    color: var(--blanco);
+    font-size: 3rem;
+}
+
+i{
+    color: var(--blanco);
+}
+

@@ -29,7 +29,7 @@
   right: 0;
   width: 5vw;
   height: 20vh;
-  z-index: 10;
+  z-index: 3;
   background-color: var(--color-amarillo);
   overflow: hidden;
   transition: width 2s ease-in-out;
@@ -225,7 +225,7 @@ body {
     height: 16vh;
   }
 
-  .rectangle .text h1 {
+  .rectangle .text h2 {
     font-size: 0.8em;
   }
 
@@ -233,7 +233,7 @@ body {
     font-size: 0.6em;
   }
 
-  .yellow-box h1 {
+  .yellow-box h2 {
     font-size: 0.8em;
   }
 
@@ -252,7 +252,7 @@ body {
     height: 24vh;
   }
 
-  .rectangle .text h1 {
+  .rectangle .text h2 {
     font-size: 0.8em;
   }
 
@@ -260,7 +260,7 @@ body {
     font-size: 0.6em;
   }
 
-  .yellow-box h1 {
+  .yellow-box h2 {
     font-size: 0.8em;
   }
 
@@ -287,7 +287,7 @@ body {
     font-size: 0.8em;
   }
   
-  .text-container h1 {
+  .text-container h2 {
     font-size: 1.1em;
   }
 
@@ -349,7 +349,7 @@ body {
     font-size: 1em;
   }
   
-  .text-container h1 {
+  .text-container h2 {
     font-size: 1.3em;
   }
 
@@ -380,7 +380,7 @@ body {
     font-size: 1em;
   }
   
-  .text-container h1 {
+  .text-container h2 {
     font-size: 1.3em;
   }
 

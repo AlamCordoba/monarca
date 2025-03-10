@@ -1,0 +1,161 @@
+:root{
+    /*Colores a utilizar*/
+    --color-principal: #F6C42A;
+    --colo-secundario: #606060;
+    --blanco: #ffffff;
+    --negro: #000000 ;
+    /*Color de textos*/
+
+    --color-de-texto:#333333;
+    /*Fuentes de texto*/
+    --fuente-titulos: "Roboto", sans-serif;  ;
+    --fuente-de-textos:  "Rubik", sans-serif;
+    --fuente-enlace: "Rubik", sans-serif;
+}
+
+
+/*Barra*/
+
+/*Tamño de imagen*/
+.logo{
+    width: 10rem;
+}
+
+.header{
+    background-color: var(--blanco);
+    color:var(--color-de-texto);
+    position: relative;
+    height: auto;
+    
+}
+
+@media (max-width: 768px) {
+    .header{
+        padding: 2rem;
+    }
+}
+
+/*Display de los enlaces*/
+.header{
+    background-color: var(--blanco);
+    color:var(--color-de-texto);
+    position: relative
+    
+}
+
+@media (max-width: 768px) {
+    .header{
+        padding: 2rem;
+    }
+}
+
+/*Display de los enlaces*/
+.navegacion{
+    display: flex;
+    justify-content: space-around;
+    height: 8rem;
+}
+
+.lista_enlaces{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    height: 100;
+    
+}
+
+.navegacion_opcion{
+        color: var(--color-de-texto);
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        text-decoration: none; 
+}
+
+
+.lista_enlaces_enlace:hover{
+    background-color: var(--color-principal);
+    transition: .5s;
+}
+
+
+.hamburgesa{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 2rem;
+}
+
+.bar{
+    width: 3.5rem;
+    height: 4px;
+    background-color: var(--negro);
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/*Diños de las redes sociales del header*/
+
+
+
+/*Ajuste del logo*/
+
+
+.logo{
+    border-radius: 1.3rem;
+    display: block;
+    background-color: var(--blanco);
+    z-index: 5;
+    position: absolute;
+    width: 15rem;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+   .logo{
+        width: 10rem;
+   }
+}
+
+
+
+
+
+
+
+
+
+/*Diseño responsivo navbar*/
+
+@media (max-width: 768px ) {
+    .navegacion{
+        justify-content: space-between;
+    }
+    .lista_enlaces{
+        position:relative;
+        width: 100%;
+        top: 70px;
+        left: -100%;
+        margin-top:5rem;
+        text-align: center;
+        flex-direction: column;
+        transition: all .5s;
+        z-index: 3;
+    }
+    .hamburgesa{
+        display: flex;
+        
+    }
+    .lista_enlaces.show{
+        display:flex;
+        position: relative;
+        background-color: var(--blanco);
+        left:0;
+        z-index: 6;
+    }
+    
+    .lista_enlaces_enlace:hover{
+        background-color: var(--color-principal);
+        padding: 1.2rem;
+        transition: .5s;
+    }
+}
