@@ -1,0 +1,638 @@
+:root{
+    /*Colores a utilizar*/
+    --color-principal: #F6C42A;
+    --colo-secundario: #606060;
+    --blanco: #ffffff;
+    --negro: #000000 ;
+    /*Color de textos*/
+
+    --color-de-texto:#333333;
+    /*Fuentes de texto*/
+    --fuente-titulos: "Roboto", sans-serif;  ;
+    --fuente-de-textos:  "Rubik", sans-serif;
+    --fuente-enlace: "Rubik", sans-serif;
+}
+
+*{
+    padding: 0;
+    
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+li{
+    list-style:none;
+}
+
+/**Gloables**/
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+
+a{
+    text-decoration: none;
+    font-family: var(--fuente-enlace);
+}
+
+h1,h2,h3,h4{
+    font-family: var( --fuente-titulos);
+    line-height: 1.5;
+}
+
+h1{
+     font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+p{
+    font-family: var(--fuente-de-textos);
+}
+
+/**Utilidades**/
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+/*Barra*/
+
+/*Tamño de imagen*/
+.logo{
+    width: 10rem;
+}
+
+/*Diseño del contenedor header*/
+.header{
+    background-color: var(--blanco);
+    color:var(--color-de-texto);
+    position: relative;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .header{
+        padding: 2rem;
+    }
+}
+
+/*Display de los enlaces*/
+.navegacion{
+    display: flex;
+    justify-content: space-around;
+    height: 8rem;
+    gap: 10rem;
+}
+
+.lista_enlaces{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    height: 100;
+}
+
+.navegacion_opcion{
+        color: var(--color-de-texto);
+        font-size: 1.8rem;
+        text-transform: uppercase;
+}
+
+
+.lista_enlaces_enlace:hover{
+    background-color: var(--color-principal);
+    transition: .5s;
+}
+
+
+.hamburgesa{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 2rem;
+}
+
+.bar{
+    width: 3.5rem;
+    height: 4px;
+    background-color: var(--negro);
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/*Diños de las redes sociales del header*/
+
+
+
+/*Ajuste del logo*/
+
+
+.logo{
+    border-radius: 1.3rem;
+    display: block;
+    background-color: var(--blanco);
+    z-index: 5;
+    position: absolute;
+    width: 15rem;
+}
+
+@media (max-width: 768px) {
+   .logo{
+        width: 10rem;
+   }
+}
+
+
+
+
+
+
+
+
+
+/*Diseño responsivo navbar*/
+
+@media (max-width: 768px ) {
+    .navegacion{
+        justify-content: space-between;
+    }
+    .lista_enlaces{
+        position: fixed;
+        width: 100%;
+        top: 70px;
+        left: -100%;
+        margin-top:5rem;
+        text-align: center;
+        flex-direction: column;
+        transition: all .5s;
+    }
+    .hamburgesa{
+        display: flex;
+        
+    }
+    .lista_enlaces.show{
+        display:flex;
+        position: absolute;
+        background-color: var(--blanco);
+        left:0;
+    }
+    
+    .lista_enlaces_enlace:hover{
+        background-color: var(--color-principal);
+        padding: 1.2rem;
+        transition: .5s;
+    }
+}
+
+
+
+
+
+
+
+/*Hero section*/
+.hero{
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+
+.hero__contenido{
+    display: block;
+    text-align: center;
+    align-items: center;
+    color: var(--blanco);
+    font-weight: bold;
+    animation: both;
+}
+
+
+
+@media (max-width: 768px) {
+    .hero__contenido{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero__contenido{
+        font-size: 3.5rem;
+    }
+
+    .hero__contenido__logo{
+        margin-top: 10rem;
+        width: 100%;
+    }
+    
+}
+
+.hero__contenido__logo{
+    margin-top: 10rem;
+    width: 20rem;
+}
+
+
+
+/*Diseño banner de redes sociales*/
+
+.heder-redes_sociales{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.heder-redes_sociales__enlace{
+    width: 100%;
+}
+
+.heder-redes_sociales__icono{
+    width: 4rem;
+    margin: 1rem;
+}
+
+/*Contenido informacion*/
+.informacion{
+    background-color: var(--blanco);
+    height: 10rem;
+    text-transform: uppercase;
+    
+}
+
+.informacion-contenido{
+    width: 100%;
+}
+
+.linea{
+    height: 5px;
+    background-color: #F6C42A;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*Diseño Panel de informacion*/
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 45rem;
+}
+
+.galeria-elemento{
+    position: relative;
+    left: 0;
+    width: 3rem;
+    border-radius: 5rem;
+    height: 25rem;
+    overflow: hidden;
+    transition: .4s ease-in-out;
+    box-shadow: 0 5 12px rgba(0 , 0, 0, .3);
+    flex: .15;
+}
+
+.galeria-elemento, .galeria-elemento__imagen, .texto{
+    position: relative;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.galeria-elemento:hover{
+    flex: 1 1 0;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+/*contenido-estrategias*/
+
+.sobre-nostros_titulo{
+    text-align: center;
+}
+
+
+.sobre-nostros{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    padding-top: 5rem;
+    gap: 2rem;
+    
+}
+
+.img_nosotros{
+    width: 70rem;
+}
+
+
+@media (max-width: 768px) {
+    .sobre-nostros{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0,1fr));
+        gap: 2rem;
+        
+    }
+    
+}
+
+
+
+/*Contenido imagen*/
+.contenido-estrategias_imagen img{
+    width: 100%;
+    width: 40rem;
+}
+
+/*Footer*/
+
+.footer{
+    background-color: var(--colo-secundario);
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    align-items: center;
+    color: var(--negro);
+    text-align: center;
+    align-items: center;
+}
+
+/*Media query para ajustar el contenido en una sola columna*/
+@media (max-width: 768px) {
+   .footer{
+         grid-template-columns: repeat(1, minmax(0,1fr));
+   }
+}
+
+
+
+
+
+/*Diseño del logo*/
+
+
+.menu_footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width:768px) {
+    .menu_footer{
+        display: block;
+    }
+    .enlace_footer{
+        width: 100%;
+    }
+
+    .enlace-imagen_footer{
+        width: 25rem;
+        margin-top: 1rem;
+    }
+}
+
+.enlace_footer{
+    width: 100%;
+}
+
+.enlace-imagen_footer{
+    width: 25rem;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+.titulo-menu_footer{
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+.lista_footer_enlace{
+    color: var(--blanco);
+}
+
+.lista_footer{
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .lista_footer{
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+    .menu_footer{
+        display: block;
+        text-align: center;
+    }
+}
+
+/*Diseño de redes sociales footer*/
+
+.redes-sociales ,.redes-sociales__opcion{
+    display: inline-block;
+    color: var(--blanco);
+    text-align: center;
+    font-size: 3rem;
+    margin: px;
+}
+
+
+/*Diseño del apartado de contactanos*/
+.contactanos{
+    text-align: center;
+    color: var(--blanco);
+    font-size: 3rem;
+}
+
+i{
+    color: var(--blanco);
+}
+
+
+
+/*Diseño galeria*/
+.contenedor-galeria{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    gap: 15px;
+    transition: 0.3s;
+    margin-top: 5rem;
+    
+}
+
+/*Diseño responsivo*/
+
+.contenedor-galeria .contenedor-galeria__opcion{
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 25rem;
+    border-radius: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    
+}
+
+.contenedor-galeria .contenedor-galeria__opcion .contenedor-galeria__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor-galeria .contenedor-galeria__opcion,
+.contenedor-galeria .contenedor-galeria__opcion .contenedor-galeria__img{
+    transition: 0.2s;
+}
+
+.contenedor-galeria .contenedor-galeria__opcion .contenido{
+    transition: 1.5s ease;
+}
+
+
+
+
+
+.contenedor-galeria span .contenido_titulo{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 4px;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    color:var(--blanco);
+    font-family: var(--fuente-titulos);
+    text-align: center;
+}
+
+.contenedor-galeria .contenido__texto{
+    color:var(--blanco);
+    font-size: auto;
+    width: 100%;
+}
+
+.contenedor-galeria .contenedor-galeria__opcion .contenido{
+    position: absolute;
+    top: 15;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    color:#ffffff;
+    padding: 15px;
+    background: linear-gradient(0deg, rgb(0 0 0 / 90%) 70%,
+    rgb(255 255 255 / 0%) 100%
+);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.contenedor-galeria:hover{
+    gap: 0;
+}
+
+.contenedor-galeria .contenedor-galeria__opcion .contenido .contenido_span{
+        position: absolute;
+        z-index: 3;
+        left: 50%;
+        bottom: 0px;
+        translate: -50%;
+        scale: 0.85;
+        visibility: hidden;
+        opacity: 0;
+}
+
+.contenedor-galeria .contenedor-galeria__opcion:hover{
+    flex: 0 1 300px;
+    scale: 1.2;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+.contenedor-galeria .contenedor-galeria__opcion:hover .contenido{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor-galeria .contenedor-galeria__opcion_hover .contenido_span{
+    scale: 1;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@media (max-width: 768px ) {
+   .contenedor-galeria{
+    height: auto;
+    flex-direction: column;
+   }
+
+
+
+    .contenedor-galeria .contenido_titulo {
+        font-size: 10px; /* Ajusta el tamaño del título */
+    }
+
+    .contenedor-galeria .contenido__texto {
+        font-size: 14px; /* Ajusta el tamaño del texto */
+    }
+
+    .contenedor-galeria .contenedor-galeria__opcion:hover{
+        flex: 0 1 400px;
+        scale: 1;
+        z-index: 10;
+        opacity: 1;
+    }
+    
+    
+
+
+}
