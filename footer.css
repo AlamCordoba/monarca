@@ -1,4 +1,25 @@
 
+.footer{
+    background-color: var(--colo-secundario);
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    align-items: center;
+    color: var(--negro);
+    text-align: center;
+    align-items: center;
+}
+
+/*Media query para ajustar el contenido en una sola columna*/
+@media (max-width: 768px) {
+   .footer{
+         grid-template-columns: repeat(1, minmax(0,1fr));
+   }
+}
+
+
+
+
 
 /*Diseño del logo*/
 
@@ -82,4 +103,3 @@
 i{
     color: var(--blanco);
 }
-
