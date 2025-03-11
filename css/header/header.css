@@ -13,18 +13,6 @@
     --fuente-enlace: "Rubik", sans-serif;
 }
 
-.no-margin{
-    margin: 0;
-}
-
-.no-padding{
-    padding: 0;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
 .header{
     background-color: var(--blanco);
     color:var(--color-de-texto);
@@ -51,14 +39,13 @@
     align-items: center;
     gap: 2rem;
     height: 100;
-    font-size: 62.5%;
-    box-sizing: border-box;
 }
 
 .navegacion_opcion{
         color: var(--color-de-texto);
         font-size: 1.8rem;
         text-transform: uppercase;
+        text-decoration: none;
 }
 
 
@@ -94,11 +81,10 @@
     border-radius: 1.3rem;
     display: block;
     background-color: var(--blanco);
-    z-index: 5;
+    z-index: 7;
     position: absolute;
     width: 15rem;
 }
-
 
 @media (max-width: 768px) {
    .logo{
@@ -139,6 +125,7 @@
         position: absolute;
         background-color: var(--blanco);
         left:0;
+        z-index: 6;
     }
     
     .lista_enlaces_enlace:hover{
