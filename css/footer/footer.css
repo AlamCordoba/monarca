@@ -13,7 +13,6 @@
     --fuente-enlace: "Rubik", sans-serif;
 }
 
-
 /*Footer*/
 
 .footer{
@@ -33,10 +32,6 @@
          grid-template-columns: repeat(1, minmax(0,1fr));
    }
 }
-
-
-
-
 
 /*Diseño del logo*/
 
@@ -81,7 +76,6 @@
 
 .lista_footer_enlace{
     color: var(--blanco);
-    text-decoration: none;
 }
 
 .lista_footer{
@@ -93,12 +87,10 @@
         display: block;
         text-align: center;
         padding: 0;
-        list-style: none;
     }
     .menu_footer{
         display: block;
         text-align: center;
-        
     }
 }
 
@@ -123,4 +115,3 @@
 i{
     color: var(--blanco);
 }
-

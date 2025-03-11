@@ -13,12 +13,16 @@
     --fuente-enlace: "Rubik", sans-serif;
 }
 
+.no-margin{
+    margin: 0;
+}
 
-/*Barra*/
+.no-padding{
+    padding: 0;
+}
 
-/*Tamño de imagen*/
-.logo{
-    width: 10rem;
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 .header{
@@ -26,21 +30,6 @@
     color:var(--color-de-texto);
     position: relative;
     height: auto;
-    
-}
-
-@media (max-width: 768px) {
-    .header{
-        padding: 2rem;
-    }
-}
-
-/*Display de los enlaces*/
-.header{
-    background-color: var(--blanco);
-    color:var(--color-de-texto);
-    position: relative
-    
 }
 
 @media (max-width: 768px) {
@@ -54,21 +43,22 @@
     display: flex;
     justify-content: space-around;
     height: 8rem;
+    gap: 10rem;
 }
 
 .lista_enlaces{
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     height: 100;
-    
+    font-size: 62.5%;
+    box-sizing: border-box;
 }
 
 .navegacion_opcion{
         color: var(--color-de-texto);
         font-size: 1.8rem;
         text-transform: uppercase;
-        text-decoration: none; 
 }
 
 
@@ -107,8 +97,8 @@
     z-index: 5;
     position: absolute;
     width: 15rem;
-    max-width: 100%;
 }
+
 
 @media (max-width: 768px) {
    .logo{
@@ -131,7 +121,7 @@
         justify-content: space-between;
     }
     .lista_enlaces{
-        position:relative;
+        position: fixed;
         width: 100%;
         top: 70px;
         left: -100%;
@@ -139,7 +129,6 @@
         text-align: center;
         flex-direction: column;
         transition: all .5s;
-        z-index: 3;
     }
     .hamburgesa{
         display: flex;
@@ -147,10 +136,65 @@
     }
     .lista_enlaces.show{
         display:flex;
-        position: relative;
+        position: absolute;
         background-color: var(--blanco);
         left:0;
-        z-index: 6;
+    }
+    
+    .lista_enlaces_enlace:hover{
+        background-color: var(--color-principal);
+        padding: 1.2rem;
+        transition: .5s;
+    }
+}
+
+
+/*Diseño banner de redes sociales*/
+
+.heder-redes_sociales{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.heder-redes_sociales__enlace{
+    width: 100%;
+}
+
+.heder-redes_sociales__icono{
+    width: 4rem;
+    margin: 1rem;
+}
+
+
+
+
+
+/*Diseño responsivo navbar*/
+
+@media (max-width: 768px ) {
+    .navegacion{
+        justify-content: space-between;
+    }
+    .lista_enlaces{
+        position: fixed;
+        width: 100%;
+        top: 70px;
+        left: -100%;
+        margin-top:5rem;
+        text-align: center;
+        flex-direction: column;
+        transition: all .5s;
+    }
+    .hamburgesa{
+        display: flex;
+        
+    }
+    .lista_enlaces.show{
+        display:flex;
+        position: absolute;
+        background-color: var(--blanco);
+        left:0;
     }
     
     .lista_enlaces_enlace:hover{
