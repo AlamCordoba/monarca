@@ -52,7 +52,7 @@
   font-weight: 500;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  font-size: 1.8em;
+  font-size: 3.5rem;
   color: var(--color-texto);
   text-align: center;
 }
@@ -62,7 +62,7 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.1em;
+  font-size: 2rem;
   text-align: end;
   color: var(--color-texto);
 }
@@ -148,7 +148,7 @@ body {
 .text-container {
   width: 100%;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 2rem;
   font-family: var(--texto);
   color: var(--color-texto);
   margin-bottom: 8vh;
@@ -166,7 +166,7 @@ body {
   font-family: var(--titulos);
   font-weight: 500;
   font-style: normal;
-  font-size: 1.8em;
+  font-size: 3.5rem;
   color: var(--color-texto);
   text-align: center;
 }
@@ -196,14 +196,14 @@ body {
 }
 
 .yellow-box h2 {
-  font-size: 2em;
+  font-size: 3.5rem;
   font-family: var(--titulos);
   font-weight: 500;
   color: var(--color-texto);
 }
 
 .yellow-box p {
-  font-size: 1.2em;
+  font-size: 2rem;
   font-family: var(--texto);
   color: var(--color-texto);
   font-weight: 500;
@@ -226,19 +226,19 @@ body {
   }
 
   .rectangle .text h2 {
-    font-size: 0.8em;
+    font-size: 1.4rem;
   }
 
   .rectangle .text p {
-    font-size: 0.6em;
+    font-size: 0.9rem;
   }
 
   .yellow-box h2 {
-    font-size: 0.8em;
+    font-size: 1.4rem;
   }
 
   .yellow-box p {
-    font-size: 0.7em;
+    font-size: 0.9rem;
   }
 
 }
@@ -253,19 +253,19 @@ body {
   }
 
   .rectangle .text h2 {
-    font-size: 0.8em;
+    font-size: 1.4rem;
   }
 
   .rectangle .text p {
-    font-size: 0.6em;
+    font-size: 0.9rem;
   }
 
   .yellow-box h2 {
-    font-size: 0.8em;
+    font-size: 1.4rem;
   }
 
   .yellow-box p {
-    font-size: 0.7em;
+    font-size: 0.9rem;
   }
 
 }
@@ -284,11 +284,11 @@ body {
   }
 
   .text-container {
-    font-size: 0.8em;
+    font-size: 0.9rem;
   }
   
   .text-container h2 {
-    font-size: 1.1em;
+    font-size: 1.4rem;
   }
 
   .imgContainer {
@@ -315,11 +315,11 @@ body {
   }
 
   .text-container {
-    font-size: 0.8em;
+    font-size: 0.9rem;
   }
   
   .text-container h1 {
-    font-size: 1.1em;
+    font-size: 1.4rem;
   }
 
   .imgContainer {
@@ -346,11 +346,11 @@ body {
   }
 
   .text-container {
-    font-size: 1em;
+    font-size: 1.5rem;
   }
   
   .text-container h2 {
-    font-size: 1.3em;
+    font-size: 2rem;
   }
 
   .imgContainer {
@@ -377,11 +377,11 @@ body {
   }
 
   .text-container {
-    font-size: 1em;
+    font-size: 1.5rem;
   }
   
   .text-container h2 {
-    font-size: 1.3em;
+    font-size: 2rem;
   }
 
   .imgContainer {
@@ -392,27 +392,4 @@ body {
     height: 40vh;
   }
 
-}
-
-
-
-
-.prueba {
-  margin-top: auto;
-  margin-bottom: auto;
-  right: 0;
-  width: 100vh;
-  height: 30vh;
-  background-color: rgb(43, 150, 61);
-}
-
-.prueba2 {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  right: 0;
-  width: 100vh;
-  /* Ancho inicial */
-  height: 30vh;
-  /* Altura completa de la ventana */
-  background-color: rgb(10, 17, 85);
 }
