@@ -1,0 +1,71 @@
+:root{
+    /*Colores a utilizar*/
+    --color-principal: #F6C42A;
+    --colo-secundario: #606060;
+    --blanco: #ffffff;
+    --negro: #000000 ;
+    /*Color de textos*/
+
+    --color-de-texto:#333333;
+    /*Fuentes de texto*/
+    --fuente-titulos: "Roboto", sans-serif;  ;
+    --fuente-de-textos:  "Rubik", sans-serif;
+    --fuente-enlace: "Rubik", sans-serif;
+}
+
+*{
+    padding: 0;
+    
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+
+
+li{
+    list-style:none;
+}
+
+/**Gloables**/
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+
+a{
+    text-decoration: none;
+    font-family: var(--fuente-enlace);
+}
+
+
+
+
+
+
+/**Utilidades**/
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+/*Barra*/
