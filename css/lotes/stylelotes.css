@@ -1,0 +1,9 @@
+.carousel {
+    width: 60%; /* Ajusta el tamaño del carrusel (puedes cambiarlo según tu necesidad) */
+    margin: auto; /* Centra el carrusel horizontalmente */
+}
+
+.carousel img {
+    height: 300px; /* Ajusta la altura de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes se adapten sin distorsionarse */
+}
