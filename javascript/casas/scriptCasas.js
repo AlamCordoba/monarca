@@ -1,35 +1,73 @@
-//Función para la animación del rectangulo amarillo
+
+// Función para la animación de elementos con IntersectionObserver
 document.addEventListener("DOMContentLoaded", function () {
-    const rectangle = document.querySelector(".rectangle");
+    function initAnimation(className) {
+        const elements = document.querySelectorAll(className);
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                rectangle.classList.add("expand");
-            } 
-        });
-    }, { threshold: 0.5 }); // Se activa cuando el 50% del rectángulo es visible
+        if (elements.length > 0) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("expand");
+                    }
+                });
+            }, { threshold: 0.5 }); // Se activa cuando el 50% del elemento es visible
 
-    observer.observe(rectangle);
+            elements.forEach(element => observer.observe(element));
+        } else {
+            console.error(`Elementos con la clase ${className} no encontrados`);
+        }
+    }
+
+    // Inicializar animación para las clases deseadas
+    initAnimation(".rectangle");
+    initAnimation(".rectangle-grid"); // Reemplaza ".otraClase" con la clase que desees animar
 });
 
 
 //Funcion para la aparición del rectangulo amarillo inferior
+//document.addEventListener("DOMContentLoaded", function () {
+  //  let yellowBox = document.getElementById("animatedBox");
+
+    //function handleScroll() {
+      //  let boxPosition = yellowBox.getBoundingClientRect().top;
+        //let screenHeight = window.innerHeight;
+
+        //if (boxPosition < screenHeight * 0.8) {
+         //   yellowBox.classList.add("show");
+           // window.removeEventListener("scroll", handleScroll); // Para que solo se active una vez
+        //}
+    //}
+
+    //window.addEventListener("scroll", handleScroll);
+    //handleScroll(); // Llamar una vez al cargar la página en caso de que ya sea visible
+//});
+
+// Función para la aparición de elementos con animación GENERICO
 document.addEventListener("DOMContentLoaded", function () {
-    let yellowBox = document.getElementById("animatedBox");
+    function handleScroll(elements) {
+        elements.forEach(element => {
+            let boxPosition = element.getBoundingClientRect().top;
+            let screenHeight = window.innerHeight;
 
-    function handleScroll() {
-        let boxPosition = yellowBox.getBoundingClientRect().top;
-        let screenHeight = window.innerHeight;
+            if (boxPosition < screenHeight * 0.8) {
+                element.classList.add("show");
+            }
+        });
+    }
 
-        if (boxPosition < screenHeight * 0.8) {
-            yellowBox.classList.add("show");
-            window.removeEventListener("scroll", handleScroll); // Para que solo se active una vez
+    function initAnimation(className) {
+        let elements = document.querySelectorAll(className);
+        if (elements.length > 0) {
+            window.addEventListener("scroll", () => handleScroll(elements));
+            handleScroll(elements); // Llamar una vez al cargar la página en caso de que ya sea visible
         }
     }
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Llamar una vez al cargar la página en caso de que ya sea visible
+    // Inicializar animación para las clases deseadas
+    initAnimation(".yellow-box");
+    initAnimation(".containerTitle");
+    initAnimation(".containerTitleClients");
 });
 
 //Función para el funcionamiento del slider
@@ -113,6 +151,41 @@ document.addEventListener("DOMContentLoaded", function () {
         let imageWidth = sliderImages[0].clientWidth;
         let offset = (containerWidth / 2) - (imageWidth / 2) - (currentIndex * imageWidth);
         imgContainer.style.transform = `translateX(${offset}px)`;
+    });
+});
+
+
+//PRUEBA PARA FUNCIÓN DE BOTONES PARA SLIDER DE OPINIONES CLIENTES
+document.addEventListener("DOMContentLoaded", function () {
+    const carrouselCard = document.querySelector(".carrouselCard");
+    const cards = document.querySelectorAll(".cardsClients");
+    const indicatorsContainer = document.querySelector(".carousel-indicators");
+
+    // Crear los puntos de navegación
+    cards.forEach((card, index) => {
+        const button = document.createElement("button");
+        if (index === 0) button.classList.add("active");
+        button.addEventListener("click", () => {
+            carrouselCard.scrollTo({
+                left: card.offsetLeft,
+                behavior: "smooth"
+            });
+            document.querySelectorAll(".carousel-indicators button").forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+        });
+        indicatorsContainer.appendChild(button);
+    });
+
+    // Actualizar los puntos de navegación al hacer scroll
+    carrouselCard.addEventListener("scroll", () => {
+        const scrollLeft = carrouselCard.scrollLeft;
+        cards.forEach((card, index) => {
+            const button = indicatorsContainer.children[index];
+            if (Math.abs(card.offsetLeft - scrollLeft) < card.offsetWidth / 2) {
+                document.querySelectorAll(".carousel-indicators button").forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+            }
+        });
     });
 });
 

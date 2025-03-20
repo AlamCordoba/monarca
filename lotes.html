@@ -52,7 +52,7 @@
               <a class="navegacion_opcion" href="/lotes.html">Lotes</a>
             </li>
             <li class="lista_enlaces_enlace">
-              <a class="navegacion_opcion" href="#">Amenidades</a>
+              <a class="navegacion_opcion" href="/amenidades.html">Amenidades</a>
             </li>
             <li class="lista_enlaces_enlace">
               <a class="navegacion_opcion" href="/casas.html">Casas</a>
@@ -103,8 +103,19 @@
       </div>
     </header>
 
+    <!--TITULO PRINCIPAL-->
+    <section>
+      <div class="containerTitle">
+        <div class="boxTextTitle">
+          <h2>NUESTROS TERRENOS</h2>
+        </div>
+        <div class="boxColorTitle">
+        </div>
+      </div>
+    </section>
+
     <!--CARROUSEL DE FOTOS-->
-    <div class="carousel">
+    <div class="carouselContainer">
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -113,13 +124,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/img/casas/RenderCasas1webp.webp" class="d-block w-100" alt="...">
+                <img src="/img/lotes/lote1Web.webp" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="/img/casas/RenderCasas2webp.webp" class="d-block w-100" alt="...">
+                <img src="/img/lotes/lote2Web.webp" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="/img/casas/RenderCasas1webp.webp" class="d-block w-100" alt="...">
+                <img src="/img/lotes/lote3Web.webp" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -131,8 +142,69 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-
         </div>
+
+        <!--TEXTO INFORMATIVO INFERIOR DEL CARROUSEL-->
+        <section>
+          <div class="descriptiveText">
+            <p>
+              A tan solo 20 minutos de la ciudad de Xalapa, encontrarás algo más que un
+              fraccionamiento residencial, encontrarás un hogar donde la belleza y la 
+              sostenibilidad se fusionan en perfecta armonía.Los 84 lotes que componen 
+              este fraccionamiento, cada uno delimitado por muros verdes que van desde los 
+              600 metros cuadrados, han sido diseñados cuidadosamente para preservar las 
+              especies de árboles y de flora, fomentando el cuidado y respeto por la 
+              naturaleza.
+            </p>
+          </div>
+        </section>
+
+        <!--GRID PARA MOSTRAR LA DISTRIBUCIÓN DE LOS LOTES-->
+      <section>
+        <div class="container-grid">
+          <div class="image-grid">
+              <img src="/img/lotes/AcomodoLotes.webp" alt="">
+          </div>
+          <div class="information-grid">
+            <div class="rectangle-grid">
+              <div class="text-grid">
+                <h2>EXTENSIÓN TERRITORIAL</h2>
+                <p>"Residencial Monarca se lleva a cabo en aproximadamente 8 hectareas de extensión
+                    territorial, contando con una ubicación privilegiada delimitada por ríos, cascadas, 
+                    pastizales, vegetación, completamente rodeados de un entorno natural en beneficio 
+                    de los habitantes, sin contaminación visual ni ambiental para una mejor calidad de 
+                    vida de los colonos que adquieran sus lotes o viviendas."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--TITULO DE CLIENTES SATISFECHOS-->
+      <section>
+        <div class="containerTitleClients">
+          <div class="boxTextTitleClients">
+            <h2>CLIENTES SATISFECHOS</h2>
+          </div>
+          <div class="boxColorTitleClients">
+          </div>
+        </div>
+      </section>
+
+      <!--CARROUSEL DE OPINIONES DE CLIENTES SATISFECHOS-->
+      <div class="carrouselContainerClients">
+        <div class="carrouselCard">
+          <div class="cardsClients"></div>
+          <div class="cardsClients"></div>
+          <div class="cardsClients"></div>
+          <div class="cardsClients"></div>
+          <div class="cardsClients"></div>
+          <div class="cardsClients"></div>
+        </div>
+        <div class="carousel-indicators"></div>
+      </div>
+      
     
     
     <!--FOOTER-->
@@ -197,6 +269,7 @@
       </div>
     </footer>
 
+    <script src="/javascript/casas/scriptCasas.js"></script>
     <script src="/javascript/scriptHamburguer.js"></script>
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

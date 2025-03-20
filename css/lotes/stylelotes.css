@@ -1,9 +1,251 @@
-.carousel {
-    width: 60%; /* Ajusta el tamaño del carrusel (puedes cambiarlo según tu necesidad) */
+:root {
+    /*colores a utilizar*/
+    --color-amarillo: #f6c42a;
+    --color-gris: #606060;
+    --blanco: #fff;
+    /*color texto*/
+    --color-texto: #333333;
+    /*fuentes de texto*/
+    --titulos: "Roboto", sans-serif;
+    --texto: "Rubik", sans-serif;
+  }
+
+.carouselContainer {
+    width: 50%; /* Ajusta el tamaño del carrusel (puedes cambiarlo según tu necesidad) */
     margin: auto; /* Centra el carrusel horizontalmente */
 }
 
-.carousel img {
-    height: 300px; /* Ajusta la altura de las imágenes */
+.carouselContainer img {
+    height: auto; /* Ajusta la altura de las imágenes */
     object-fit: cover; /* Asegura que las imágenes se adapten sin distorsionarse */
+    border-radius: 30px;
 }
+
+.containerTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateY(100px);
+}
+
+.containerTitle.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.boxColorTitle{
+    background-color: var(--color-amarillo);
+    border-radius: 15px;
+    padding: 0 1vh;
+    margin-top: -4vh; /* Ajusta este valor según sea necesario */
+    width: 50%;
+    height: 7vh;
+    z-index: 0;
+    position: relative;
+}
+
+.boxTextTitle{
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    padding: 0 1vh;
+}
+
+.boxTextTitle h2{
+    font-family: var(--titulos);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 5rem;
+    color: var(--color-texto);
+    text-align: center;
+    margin: 0;
+}
+
+/*CSS PARA EL TEXTO DESCRIPTIVO*/
+
+.descriptiveText{
+    margin: 3vh 8vw 3vh 8vw;
+    font-family: var(--texto);
+    font-size: 1.8rem;
+    color: var(--color-texto);
+    text-align: justify;
+
+}
+
+/*CSS PARA EL GRID DEL PLANO E INFORMACION DEL RECTANGULO AMARILLO LATERAL*/
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+    gap: 20px; /* Espacio entre los elementos */
+    width: 100%;/*ho de la grid */
+    margin: 0; /* Centrar la grid */
+    padding: 0;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.image-grid {
+    background-color: var(--blanco); /* Color de fondo */
+    height: 63vh;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.image-grid img {
+    object-fit: cover; /* Asegura que las imágenes se adapten sin distorsionarse */
+    rotate: -35deg;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.rectangle-grid {
+    position: absolute;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-radius: 15px 0px 0px 15px;
+    right: 0;
+    width: 5vw;
+    height: 45vh;
+    background-color: var(--color-amarillo);
+    overflow: hidden;
+    transition: width 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-grid {
+    white-space: normal;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 2s, max-height 3s ease-in-out;
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
+  
+  .rectangle-grid .text-grid h2 {
+    font-family: var(--titulos);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 3.2rem;
+    color: var(--color-texto);
+    text-align: center;
+  }
+  
+  .rectangle-grid .text-grid p {
+    font-family: var(--texto);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.9rem;
+    text-align: justify;
+    color: var(--color-texto);
+  }
+  
+  .rectangle-grid.expand {
+    width: 48%;
+    max-width: 50vw;
+  }
+  
+  .rectangle-grid.expand .text-grid {
+    opacity: 1;
+  }
+
+  /*CSS PARA TITULO DE CLIENTES SATISFECHOS*/
+
+    .containerTitleClients{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 9vh;
+        margin-bottom: 5vh;
+        opacity: 0;
+        transition: opacity 1s ease-out, transform 1s ease-out;
+        transform: translateY(100px);
+    }
+
+    .containerTitleClients.show{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .boxColorTitleClients{
+        background-color: var(--color-amarillo);
+        border-radius: 15px;
+        padding: 0 1vh;
+        width: 50%;
+        height: 2vh;
+        z-index: 0;
+        position: relative;
+    }
+
+    .boxTextTitleClients{
+        position: relative;
+        z-index: 1;
+        background-color: transparent;
+        padding: 0 1vh;
+    }
+
+    .boxTextTitleClients h2{
+        font-family: var(--titulos);
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        font-size: 3rem;
+        color: var(--color-texto);
+        text-align: center;
+        margin: 0;
+    }
+
+    /*CSS PARA TARJETAS DE CLIENTES SATISFECHOS*/
+
+    .carrouselContainerClients{
+        width: 100vw;
+        height: 50vh;
+        display: inline;
+        align-items: center;
+        overflow: hidden;
+
+    }
+
+    .carrouselCard{
+        display: grid;
+        grid-auto-flow:column;
+        gap: 1.2rem;
+        overflow-x: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+
+    }
+
+    .cardsClients{
+        background-color: var(--color-gris);
+        width: 20vw;
+        height: 18vh;
+        border-radius: 15px;
+        scroll-snap-align: center;
+
+    }
+    
+
+
+
+
+
+
+
