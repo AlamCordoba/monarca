@@ -155,39 +155,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//PRUEBA PARA FUNCIÓN DE BOTONES PARA SLIDER DE OPINIONES CLIENTES
-document.addEventListener("DOMContentLoaded", function () {
-    const carrouselCard = document.querySelector(".carrouselCard");
-    const cards = document.querySelectorAll(".cardsClients");
-    const indicatorsContainer = document.querySelector(".carousel-indicators");
+//PRUEBA PARA FUNCIÓN DE BOTONES PARA SLIDER DE OPINIONES CLIENTES 2
+let currentSlide = 0;
 
-    // Crear los puntos de navegación
-    cards.forEach((card, index) => {
-        const button = document.createElement("button");
-        if (index === 0) button.classList.add("active");
-        button.addEventListener("click", () => {
-            carrouselCard.scrollTo({
-                left: card.offsetLeft,
-                behavior: "smooth"
-            });
-            document.querySelectorAll(".carousel-indicators button").forEach(btn => btn.classList.remove("active"));
-            button.classList.add("active");
-        });
-        indicatorsContainer.appendChild(button);
-    });
+function moveSlider(index) {
+    const slider = document.querySelector(".opinions-slider");
+    const dots = document.querySelectorAll(".dot");
 
-    // Actualizar los puntos de navegación al hacer scroll
-    carrouselCard.addEventListener("scroll", () => {
-        const scrollLeft = carrouselCard.scrollLeft;
-        cards.forEach((card, index) => {
-            const button = indicatorsContainer.children[index];
-            if (Math.abs(card.offsetLeft - scrollLeft) < card.offsetWidth / 2) {
-                document.querySelectorAll(".carousel-indicators button").forEach(btn => btn.classList.remove("active"));
-                button.classList.add("active");
-            }
-        });
-    });
-});
+    currentSlide = index;
+    slider.style.transform = `translateX(-${index * 120}%)`;
+
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[index].classList.add("active");
+}
+
 
 
 

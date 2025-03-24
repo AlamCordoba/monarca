@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="/css/header/header.css" />
     <link rel="stylesheet" href="/css/footer/footer.css" />
     <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/lotes/lotes.css" />
     <link rel="stylesheet" href="/css/lotes/stylelotes.css"/>
     <link
     rel="stylesheet"
@@ -192,18 +191,45 @@
         </div>
       </section>
 
-      <!--CARROUSEL DE OPINIONES DE CLIENTES SATISFECHOS-->
-      <div class="carrouselContainerClients">
-        <div class="carrouselCard">
-          <div class="cardsClients"></div>
-          <div class="cardsClients"></div>
-          <div class="cardsClients"></div>
-          <div class="cardsClients"></div>
-          <div class="cardsClients"></div>
-          <div class="cardsClients"></div>
+      <!--SLIDER DE OPINIONES PRUEBA-->
+      <div class="opinions-container">
+        <div class="opinions-slider">
+            <div class="opinion-card">
+                <p class="opinion-text">"Excelente servicio, muy recomendado!"</p>
+                <h2 class="opinion-author">- Juan Pérez</h2>
+            </div>
+            <div class="opinion-card">
+                <p class="opinion-text">"La mejor experiencia que he tenido, volvería sin dudarlo."</p>
+                <h2 class="opinion-author">- María Gómez</h2>
+            </div>
+            <div class="opinion-card">
+                <p class="opinion-text">"Atención al cliente impecable, muy satisfecho."</p>
+                <h2 class="opinion-author">- Carlos Rodríguez</h2>
+            </div>
+            <div class="opinion-card">
+              <p class="opinion-text">"Atención al cliente impecable, muy satisfecho."</p>
+              <h2 class="opinion-author">- Carlos Rodríguez</h2>
+          </div>
+          <div class="opinion-card">
+            <p class="opinion-text">"Atención al cliente impecable, muy satisfecho."</p>
+            <h2 class="opinion-author">- Carlos Rodríguez</h2>
         </div>
-        <div class="carousel-indicators"></div>
+        <div class="opinion-card">
+          <p class="opinion-text">"Atención al cliente impecable, muy satisfecho."</p>
+          <h2 class="opinion-author">- Carlos Rodríguez</h2>
       </div>
+        </div> 
+    
+        <!-- Puntos indicadores -->
+        <div class="dots-container">
+            <span class="dot active" onclick="moveSlider(0)"></span>
+            <span class="dot" onclick="moveSlider(1)"></span>
+            <span class="dot" onclick="moveSlider(2)"></span>
+            <span class="dot" onclick="moveSlider(3)"></span>
+            <span class="dot" onclick="moveSlider(4)"></span>
+        </div>
+    </div>  
+    
       
     
     
@@ -226,13 +252,13 @@
             <a class="lista_footer_enlace" href="#">Nosotros</a>
           </li>
           <li class="lista_footer_opcion">
-            <a class="lista_footer_enlace" href="#">Lotes</a>
+            <a class="lista_footer_enlace" href="/lotes.html">Lotes</a>
           </li>
           <li class="lista_footer_opcion">
-            <a class="lista_footer_enlace" href="#">Casas</a>
+            <a class="lista_footer_enlace" href="/casas.html">Casas</a>
           </li>
           <li class="lista_footer_opcion">
-            <a class="lista_footer_enlace" href="#">Sustentabilidad</a>
+            <a class="lista_footer_enlace" href="/sustentabilidad.html">Sustentabilidad</a>
           </li>
         </ul>
       </div>
@@ -269,7 +295,7 @@
       </div>
     </footer>
 
-    <script src="/javascript/casas/scriptCasas.js"></script>
+    <script src="/javascript/casas/scriptCasasLotes.js"></script>
     <script src="/javascript/scriptHamburguer.js"></script>
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
