@@ -230,7 +230,7 @@ body {
   }
 
   .rectangle .text p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .yellow-box h2 {
@@ -238,7 +238,7 @@ body {
   }
 
   .yellow-box p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
 }
@@ -253,19 +253,19 @@ body {
   }
 
   .rectangle .text h2 {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
 
   .rectangle .text p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 
   .yellow-box h2 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .yellow-box p {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
 
 }
@@ -284,11 +284,11 @@ body {
   }
 
   .text-container {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
   
   .text-container h2 {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 
   .imgContainer {
@@ -315,11 +315,11 @@ body {
   }
 
   .text-container {
-    font-size: 0.9rem;
+    font-size: 1.4rem;
   }
   
-  .text-container h1 {
-    font-size: 1.4rem;
+  .text-container h2 {
+    font-size: 2rem;
   }
 
   .imgContainer {

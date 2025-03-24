@@ -1,0 +1,564 @@
+:root {
+  /*colores a utilizar*/
+  --color-amarillo: #f6c42a;
+  --color-gris: #606060;
+  --blanco: #fff;
+  /*color texto*/
+  --color-texto: #333333;
+  /*fuentes de texto*/
+  --titulos: "Roboto", sans-serif;
+  --texto: "Rubik", sans-serif;
+}
+/*CSS PARA CARRUSEL DE IMAGENES DE BOOTSTRAP*/
+.carouselContainer {
+  width: 75%; /* Ajusta el tamaño del carrusel (puedes cambiarlo según tu necesidad) */
+  margin: auto; /* Centra el carrusel horizontalmente */
+}
+
+.carouselContainer img {
+  height: auto; /* Ajusta la altura de las imágenes */
+  object-fit: cover; /* Asegura que las imágenes se adapten sin distorsionarse */
+  border-radius: 30px;
+}
+
+/*CSS PARA EL TITULO PRINCIPAL DE "NUESTROS TERRENOS"*/
+.containerTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7vh;
+  margin-bottom: 5vh;
+  opacity: 0;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  transform: translateY(100px);
+}
+
+.containerTitle.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.boxColorTitle {
+  background-color: var(--color-amarillo);
+  border-radius: 15px;
+  padding: 0 1vh;
+  margin-top: -4vh; /* Ajusta este valor según sea necesario */
+  width: 75%;
+  height: 5vh;
+  z-index: 0;
+  position: relative;
+}
+
+.boxTextTitle {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  padding: 0 1vh;
+}
+
+.boxTextTitle h2 {
+  font-family: var(--titulos);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 5rem;
+  color: var(--color-texto);
+  text-align: center;
+  margin: 0;
+}
+
+/*CSS PARA EL TEXTO DESCRIPTIVO*/
+
+.descriptiveText {
+  margin: 3vh 8vw 3vh 8vw;
+  font-family: var(--texto);
+  font-size: 1.8rem;
+  color: var(--color-texto);
+  text-align: justify;
+}
+
+/*CSS PARA EL GRID DEL PLANO E INFORMACION DEL RECTANGULO AMARILLO LATERAL*/
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+  gap: 20px; /* Espacio entre los elementos */
+  width: 100%; /*ho de la grid */
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+.image-grid {
+  position: relative;
+  background-color: var(--blanco); /* Color de fondo */
+  height: 500px;
+  text-align: center;
+  align-items: center;
+}
+
+.image-grid img {
+  object-fit: cover; /* Asegura que las imágenes se adapten sin distorsionarse */
+  rotate: -35deg;
+}
+
+.rectangle-grid {
+  position: absolute;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  border-radius: 15px 0px 0px 15px;
+  right: 0;
+  width: 5vw;
+  height: 45vh;
+  background-color: var(--color-amarillo);
+  overflow: hidden;
+  transition: width 2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-grid {
+  white-space: normal;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out 2s, max-height 3s ease-in-out;
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+.rectangle-grid .text-grid h2 {
+  font-family: var(--titulos);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 3.2rem;
+  color: var(--color-texto);
+  text-align: center;
+}
+
+.rectangle-grid .text-grid p {
+  font-family: var(--texto);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.9rem;
+  text-align: justify;
+  color: var(--color-texto);
+}
+
+.rectangle-grid.expand {
+  width: 48%;
+  max-width: 50vw;
+}
+
+.rectangle-grid.expand .text-grid {
+  opacity: 1;
+}
+
+/*CSS PARA TITULO DE CLIENTES SATISFECHOS*/
+.containerTitleClients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 9vh;
+  margin-bottom: 5vh;
+  opacity: 0;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  transform: translateY(100px);
+}
+
+.containerTitleClients.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.boxColorTitleClients {
+  background-color: var(--color-amarillo);
+  border-radius: 15px;
+  padding: 0 1vh;
+  width: 50%;
+  height: 16px;
+  z-index: 0;
+  position: relative;
+}
+
+.boxTextTitleClients {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  padding: 0 1vh;
+}
+
+.boxTextTitleClients h2 {
+  font-family: var(--titulos);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 3rem;
+  color: var(--color-texto);
+  text-align: center;
+  margin: 0;
+}
+
+/*CSS PARA TARJETAS DE CLIENTES SATISFECHOS*/
+.opinions-container {
+  width: 80%;
+  margin-bottom: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.opinions-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 25%; /* Ajusta según el número de opiniones */
+  gap: 20px;
+}
+
+.opinion-card {
+  width: 100%;
+  min-width: 100%;
+  background: #f6c42a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.opinion-text {
+  font-size: 1.5rem;
+  color: var(--color-texto);
+  font-family: var(--texto);
+}
+
+.opinion-author {
+  font-size: 1.2rem;
+  color: var(--color-texto);
+  font-family: var(--titulos);
+}
+
+/* Estilos para los puntos indicadores */
+.dots-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/*MEDIA QUERIES PARA PANTALLAS PEQUEÑAS*/
+@media (max-width: 767px) and (max-height: 940px) and (orientation: portrait) {
+  /*Desde la linea 273 hasta la 289 es media query para el titulo inicial*/
+  .boxTextTitle h2 {
+    font-size: 2.5rem;
+  }
+
+  .boxColorTitle {
+    margin-top: -1.8vh;
+    width: 70%;
+    height: 3vh;
+    border-radius: 7px;
+  }
+
+  .containerTitle {
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+  }
+  /*-------------------------------------------------------------------------*/
+
+  /*Desde la linea 291 hasta la 299 es media query para el carrusel de fotos*/
+  .carouselContainer {
+    width: 70%;
+  }
+
+  .carouselContainer img {
+    border-radius: 15px;
+  }
+  /*-------------------------------------------------------------------------*/
+
+  /*Desde linea 301 hasta la linea 334 es media query para el grid de la imagen y rectangulo amarillo*/
+  .container-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 2fr); /* 2 columnas de igual tamaño */
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 900px;
+  }
+
+  .image-grid img {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .rectangle-grid {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 40vh;
+  }
+
+  .rectangle-grid .text-grid h2 {
+    font-size: 2.2rem;
+  }
+
+  .rectangle-grid .text-grid p {
+    font-size: 1.4rem;
+  }
+
+  .rectangle-grid.expand {
+    width: 75%;
+    max-width: 80vw;
+  }
+  /****************************************************************************************/
+
+  /*Desde la linea 336 hasta la 348 es el media query del titulo de las opiniones*/
+  .boxColorTitleClients {
+    width: 70%;
+  }
+
+  .containerTitleClients {
+    margin-top: 1vh;
+  }
+
+  .boxTextTitleClients h2 {
+    font-size: 2.3rem;
+  }
+
+  /***********************************************************************************/
+
+  /*Desde la linea 350 hast la 358 es el titulo de las opiniones*/
+  .opinions-slider {
+    width: 45%; /* Ajusta según el número de opiniones */
+  }
+
+  .opinion-card {
+    padding: 15px;
+  }
+  /************************************************************************************/
+}
+
+/*MEDIA QUERIES PARA PANTALLAS PEQUEÑAS*/
+@media (max-width: 940px) and (max-height: 767px) and (orientation: landscape) {
+  /*Desde la linea 273 hasta la 289 es media query para el titulo inicial*/
+
+  .containerTitle {
+    margin-top: 2vh;
+  }
+
+  .boxTextTitle h2 {
+    font-size: 3rem;
+  }
+
+  .boxColorTitle {
+    margin-top: -4.5vh;
+    width: 70%;
+    height: 6vh;
+    border-radius: 7px;
+  }
+
+  /*-------------------------------------------------------------------------*/
+
+  /*Desde la linea 291 hasta la 299 es media query para el carrusel de fotos*/
+  .carouselContainer {
+    width: 70%;
+  }
+
+  .carouselContainer img {
+    border-radius: 15px;
+  }
+  /*-------------------------------------------------------------------------*/
+
+  /*Desde linea 301 hasta la linea 334 es media query para el grid de la imagen y rectangulo amarillo*/
+  .rectangle-grid .text-grid h2 {
+    font-size: 2.2rem;
+  }
+
+  .rectangle-grid .text-grid p {
+    font-size: 1.4rem;
+  }
+
+  .rectangle-grid {
+    height: 68vh;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+  }
+
+  /****************************************************************************************/
+
+  /*Desde la linea 336 hasta la 348 es el media query del titulo de las opiniones*/
+  .boxColorTitleClients {
+    width: 70%;
+  }
+
+  .boxTextTitleClients h2 {
+    font-size: 2.3rem;
+  }
+
+  .containerTitleClients {
+    margin-top: 65vh;
+  }
+  /***********************************************************************************/
+
+  /*Desde la linea 350 hast la 358 es el titulo de las opiniones*/
+  .opinions-slider {
+    width: 45%; /* Ajusta según el número de opiniones */
+  }
+
+  .opinion-card {
+    padding: 15px;
+  }
+  /************************************************************************************/
+}
+
+/*MEDIA QUERIES PARA PANTALLAS MEDIANAS*/
+@media (min-width: 761px) and (max-width: 1060px) and (max-height: 1300px) and (orientation: portrait) {
+  /*Media query para el titulo inicial*/
+  .boxTextTitle h2 {
+    font-size: 3.5rem;
+  }
+
+  .boxColorTitle {
+    margin-top: -1.8vh;
+    width: 70%;
+    height: 3vh;
+    border-radius: 7px;
+  }
+
+  .containerTitle {
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+  }
+  /*-------------------------------------------------------------------------*/
+
+  /*Media query para el carrusel de fotos*/
+  .carouselContainer {
+    width: 70%;
+  }
+
+  .carouselContainer img {
+    border-radius: 15px;
+  }
+  /*-------------------------------------------------------------------------*/
+
+  /*Media query para el grid de la imagen y rectangulo amarillo*/
+  .container-grid {
+    margin-top: 0;
+    margin-bottom: 3vh;
+  }
+
+  .rectangle-grid {
+    height: 28vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .image-grid img {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .rectangle-grid .text-grid h2 {
+    font-size: 2.2rem;
+  }
+
+  .rectangle-grid .text-grid p {
+    font-size: 1.4rem;
+  }
+  /****************************************************************************************/
+
+  /*Desde la linea 336 hasta la 348 es el media query del titulo de las opiniones*/
+  .boxColorTitleClients {
+    width: 70%;
+  }
+
+  .boxTextTitleClients h2 {
+    font-size: 2.5rem;
+  }
+
+  .containerTitleClients {
+    margin-top: 1vh;
+  }
+
+  /***********************************************************************************/
+
+  /*Desde la linea 350 hast la 358 es el titulo de las opiniones*/
+  .opinions-slider {
+    width: 45%; /* Ajusta según el número de opiniones */
+  }
+
+  .opinion-card {
+    padding: 15px;
+  }
+
+  .opinions-container {
+    margin-bottom: 5vh;
+  }
+  /************************************************************************************/
+}
+
+/*MEDIA QUERIES PARA PANTALLAS GRANDES EN VERTICAL*/
+@media (min-width: 900px) and (min-height: 1300px) and (orientation: portrait) {
+  /*Media query para el titulo inicial*/
+  .boxTextTitle h2 {
+    font-size: 3.5rem;
+  }
+
+  .boxColorTitle {
+    margin-top: -1.5vh;
+    width: 70%;
+    height: 2.5vh;
+    border-radius: 7px;
+  }
+
+  .containerTitle {
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+  }
+  /****************************************************************************************/
+
+  /*Media query para el grid de la imagen y rectangulo amarillo*/
+  .container-grid {
+    margin-top: 0;
+    margin-bottom: 3vh;
+  }
+
+  .rectangle-grid {
+    height: 26vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
+  .image-grid img {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .rectangle-grid .text-grid h2 {
+    font-size: 2.5rem;
+  }
+
+  .rectangle-grid .text-grid p {
+    font-size: 1.7rem;
+  }
+
+  .containerTitleClients {
+    margin-top: 3vh;
+  }
+
+
+}
