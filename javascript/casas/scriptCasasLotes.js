@@ -24,25 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
     initAnimation(".rectangle-grid"); // Reemplaza ".otraClase" con la clase que desees animar
 });
 
-
-//Funcion para la aparición del rectangulo amarillo inferior
-//document.addEventListener("DOMContentLoaded", function () {
-  //  let yellowBox = document.getElementById("animatedBox");
-
-    //function handleScroll() {
-      //  let boxPosition = yellowBox.getBoundingClientRect().top;
-        //let screenHeight = window.innerHeight;
-
-        //if (boxPosition < screenHeight * 0.8) {
-         //   yellowBox.classList.add("show");
-           // window.removeEventListener("scroll", handleScroll); // Para que solo se active una vez
-        //}
-    //}
-
-    //window.addEventListener("scroll", handleScroll);
-    //handleScroll(); // Llamar una vez al cargar la página en caso de que ya sea visible
-//});
-
 // Función para la aparición de elementos con animación GENERICO
 document.addEventListener("DOMContentLoaded", function () {
     function handleScroll(elements) {
