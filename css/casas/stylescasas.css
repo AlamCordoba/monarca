@@ -215,14 +215,17 @@ body {
   transform: translateY(0);
 }
 
-/* MEDIA QUERY PARA PANTALLAS PEQUEÑAS*/
-@media (max-width: 767px) {
+
+
+/*MEDIA QUERIES PARA PANTALLAS PEQUEÑAS*/
+@media (max-width:760px) and (max-height:1000px) and (orientation:portrait){
+
   .containerSectionText {
     height: 18vh;
   }
 
   .rectangle {
-    height: 16vh;
+    height: 17vh;
   }
 
   .rectangle .text h2 {
@@ -240,38 +243,6 @@ body {
   .yellow-box p {
     font-size: 1rem;
   }
-
-}
-
-@media (max-height: 600px) {
-  .containerSectionText {
-    height: 28vh;
-  }
-
-  .rectangle {
-    height: 24vh;
-  }
-
-  .rectangle .text h2 {
-    font-size: 1.7rem;
-  }
-
-  .rectangle .text p {
-    font-size: 1.2rem;
-  }
-
-  .yellow-box h2 {
-    font-size: 1.8rem;
-  }
-
-  .yellow-box p {
-    font-size: 1.3rem;
-  }
-
-}
-
-/*MEDIA QUERIES EN ESPECIFICO PARA EL SLIDER PARA PANTALLAS PEQUEÑAS*/
-@media (max-width:760px) and (max-height:1000px) and (orientation:portrait){
 
   .imgSlider {
     width: 25vw;
@@ -299,10 +270,34 @@ body {
     height: 30vh;
   }
 
+  .yellow-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .yellow-box p {
+    font-size: 1.3rem;
+  }
+
 } 
 
-/*MEDIA QUERIES EN ESPECIFICO PARA EL SLIDER PARA PANTALLAS PEQUEÑAS*/
+/*MEDIA QUERIES PARA PANTALLAS PEQUEÑAS*/
 @media (max-width:1000px) and (max-height:760px) and (orientation:landscape){
+
+  .containerSectionText {
+    height: 18vh;
+  }
+
+  .rectangle {
+    height: 17vh;
+  }
+
+  .rectangle .text h2 {
+    font-size: 1.4rem;
+  }
+
+  .rectangle .text p {
+    font-size: 1rem;
+  }
 
   .imgSlider {
     width: 13vw;
@@ -330,10 +325,34 @@ body {
     height: 58vh;
   }
 
+  .yellow-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .yellow-box p {
+    font-size: 1.3rem;
+  }
+
 } 
 
-/*MEDIA QUERIES EN ESPECIFICO PARA EL SLIDER PARA PANTALLAS MEDIANAS*/
+/*MEDIA QUERIES PARA PANTALLAS MEDIANAS*/
 @media (min-width:761px) and (max-width:1060px) and (max-height:1300px) and (orientation:portrait){
+
+  .containerSectionText {
+    height: 18vh;
+  }
+
+  .rectangle {
+    height: 17vh;
+  }
+
+  .rectangle .text h2 {
+    font-size: 2rem;
+  }
+
+  .rectangle .text p {
+    font-size: 1.3rem;
+  }
 
   .imgSlider {
     width: 13vw;
@@ -361,10 +380,35 @@ body {
     height: 20vh;
   }
 
+  .yellow-box h2 {
+    font-size: 2rem;
+  }
+
+  .yellow-box p {
+    font-size: 1.3rem;
+  }
+
 }
 
-/*MEDIA QUERIES EN ESPECIFICO PARA EL SLIDER PARA PANTALLAS MEDIANAS*/
+/*MEDIA QUERIES PARA PANTALLAS MEDIANAS*/
 @media (min-height:761px) and (max-height:1060px) and (max-width:1300px) and (orientation:landscape){
+
+  .containerSectionText {
+    height: 18vh;
+  }
+
+  .rectangle {
+    height: 17vh;
+  }
+
+  .rectangle .text h2 {
+    font-size: 2rem;
+  }
+
+  .rectangle .text p {
+    font-size: 1.3rem;
+  }
+
 
   .imgSlider {
     width: 11vw;
@@ -390,6 +434,14 @@ body {
 
   .slideContainer {
     height: 40vh;
+  }
+
+  .yellow-box h2 {
+    font-size: 2rem;
+  }
+
+  .yellow-box p {
+    font-size: 1.3rem;
   }
 
 }
