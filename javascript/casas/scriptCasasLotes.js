@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Inicializar animación para las clases deseadas
     initAnimation(".rectangle");
-    initAnimation(".rectangle-grid"); // Reemplaza ".otraClase" con la clase que desees animar
+    initAnimation(".rectangle-grid");
 });
 
 // Función para la aparición de elementos con animación GENERICO

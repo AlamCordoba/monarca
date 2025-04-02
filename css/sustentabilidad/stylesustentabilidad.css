@@ -14,13 +14,6 @@
 }
 
 
-
-
-
-
-
-
-
 /*Hero section*/
 .hero{
     background-image: url(/img/sustentabilidad/banner.jpg);
@@ -158,16 +151,19 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0,1fr));
     padding-top: 5rem;
-    gap: 2rem;
+    text-align: justify;
+    gap: 3rem;
     
 }
 
 .img_nosotros{
     max-width: 100%;
     width: 80rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.sobre-nostros__imagen{
+.sobre-nostros__imagen {
     width: 100%;
 }
 
@@ -185,6 +181,7 @@
 .contenedor p{
     font-size: 2rem;
     font-family: var(--fuente-de-textos);
+
 }
 
 
