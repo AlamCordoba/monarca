@@ -1,0 +1,85 @@
+
+
+/*Diseño del logo*/
+
+
+.menu_footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width:768px) {
+    .menu_footer{
+        display: block;
+    }
+    .enlace_footer{
+        width: 100%;
+    }
+
+    .enlace-imagen_footer{
+        width: 25rem;
+        margin-top: 1rem;
+    }
+}
+
+.enlace_footer{
+    width: 100%;
+}
+
+.enlace-imagen_footer{
+    width: 25rem;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+.titulo-menu_footer{
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+.lista_footer_enlace{
+    color: var(--blanco);
+}
+
+.lista_footer{
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .lista_footer{
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+    .menu_footer{
+        display: block;
+        text-align: center;
+    }
+}
+
+/*Diseño de redes sociales footer*/
+
+.redes-sociales ,.redes-sociales__opcion{
+    display: inline-block;
+    color: var(--blanco);
+    text-align: center;
+    font-size: 3rem;
+    margin: px;
+}
+
+
+/*Diseño del apartado de contactanos*/
+.contactanos{
+    text-align: center;
+    color: var(--blanco);
+    font-size: 3rem;
+}
+
+i{
+    color: var(--blanco);
+}
+

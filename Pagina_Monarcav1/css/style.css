@@ -1,0 +1,178 @@
+:root{
+    /*Colores a utilizar*/
+    --color-principal: #F6C42A;
+    --colo-secundario: #606060;
+    --blanco: #ffffff;
+    /*Color de textos*/
+
+    --color-de-texto:#333333;
+    /*Fuentes de texto*/
+    --fuente-titulos: ;
+    --fuente-de-textos: ;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/**Gloables**/
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--fuenteHeading);
+    line-height: 1.5;
+}
+
+h1{
+     font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+
+/**Utilidades**/
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.header{
+    background-color: var(--blanco);
+    padding: 1.5rem;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70rem;
+}
+
+@media (min-width: 768px) {
+   
+}
+
+/*Color de las letras*/
+.header .navegacion_opcion {
+    font-size: 2rem;
+    color: var(--color-de-texto);
+    padding: 0 1rem;
+    font-weight: bold;
+}
+
+.navegacion_opcion:hover{
+    background-color: var(--color-principal);
+    background-size: cover;
+    height: 100%;
+    
+}
+
+/*Diseño redes sociales*/
+.barra_redessociales{
+    display: flex;
+    align-items: center; 
+    padding: 1rem;   
+}
+
+.redes_sociales{
+    color: black;
+    justify-content: space-between;
+}
+
+.barra_redessociales i{
+    font-size: 3rem;
+}
+
+
+/*Logo*/
+
+
+.logo_imagen{
+    width: 15rem;  
+}
+
+
+/**Imagen de fondo*/
+.hero{
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60rem;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero__contenido{
+    position: absolute;
+    display: flex;/*Todo estas lineas funcionan para alinear todo el contenido*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:var(--blanco);
+    height: 100%;
+    width: 100%;
+
+}
+
+/*Ajuste de Ejes del Logo*/
+.logo{
+  border-radius: 1.3rem;
+  background-color: var(--blanco); 
+  z-index: 5;
+  position: absolute;
+  left: 100px;
+  top: 1px;
+}
+
+/*Diseño del footer*/
+.footer{
+    display: grid;
+    background-color: var(--colo-secundario);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer_redessociales{
+    grid-column: 1 / 3;
+}
