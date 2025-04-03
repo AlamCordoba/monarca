@@ -1,0 +1,339 @@
+:root{
+    /*Colores a utilizar*/
+    --color-principal: #F6C42A;
+    --colo-secundario: #606060;
+    --blanco: #ffffff;
+    --negro: #000000 ;
+    /*Color de textos*/
+
+    --color-de-texto:#333333;
+    /*Fuentes de texto*/
+    --fuente-titulos: "Roboto", sans-serif;  ;
+    --fuente-de-textos:  "Rubik", sans-serif;
+    --fuente-enlace: "Rubik", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/*Hero section*/
+.hero{
+    background-image: url(/img/sustentabilidad/banner.jpg);
+    height: 60rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%; 
+}
+
+
+.hero__contenido{
+    display: block;
+    text-align: center;
+    align-items: center;
+    color: var(--blanco);
+    font-weight: bold;
+    animation: both;
+    padding: 1rem;
+    font-family: var(--fuente-de-textos);
+}
+
+
+
+@media (max-width: 768px) {
+    .hero__contenido{
+        font-size: 7.5rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero__contenido{
+        font-size: 4rem;
+    }
+
+    .hero__contenido__logo{
+        margin-top: 10rem;
+        width: 100%;
+    }
+    
+}
+
+.hero__contenido__logo{
+    margin-top: 10rem;
+    width: 20rem;
+}
+
+
+
+/*Diseño banner de redes sociales*/
+
+.heder-redes_sociales{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.heder-redes_sociales__enlace{
+    width: 100%;
+}
+
+.heder-redes_sociales__icono{
+    width: 4rem;
+    margin: 1rem;
+}
+
+/*Contenido informacion*/
+.informacion{
+    background-color: var(--blanco);
+    height: 10rem;
+    text-transform: uppercase;
+    
+}
+
+.informacion-contenido__titulo{
+    font-size: 3.8rem;
+    text-align: center;
+    font-family: var(--fuente-titulos);
+}
+
+.informacion-contenido{
+    width: 100%;
+}
+
+.linea{
+    height: 5px;
+    background-color: #F6C42A;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*Diseño Panel de informacion*/
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 45rem;
+}
+
+.galeria-elemento{
+    position: relative;
+    left: 0;
+    width: 3rem;
+    border-radius: 5rem;
+    height: 25rem;
+    overflow: hidden;
+    transition: .4s ease-in-out;
+    box-shadow: 0 5 12px rgba(0 , 0, 0, .3);
+    flex: .15;
+}
+
+.galeria-elemento, .galeria-elemento__imagen, .texto{
+    position: relative;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.galeria-elemento:hover{
+    flex: 1 1 0;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+/*contenido-estrategias*/
+
+.sobre-nostros_titulo{
+    text-align: center;
+    font-size: 4rem;
+    font-family: var(--fuente-titulos);
+}
+
+
+
+.sobre-nostros{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    padding-top: 5rem;
+    gap: 2rem;
+    
+}
+
+.img_nosotros{
+    max-width: 100%;
+    width: 80rem;
+}
+
+.sobre-nostros__imagen{
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .sobre-nostros{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0,1fr));
+        gap: 2rem;
+        
+    }
+    
+}
+
+.contenedor p{
+    font-size: 2rem;
+    font-family: var(--fuente-de-textos);
+}
+
+
+/*Contenido imagen*/
+.contenido-estrategias_imagen img{
+    width: 100%;
+    width: 40rem;
+}
+
+/*Diseño galeria*/
+.contenedor-galeria{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    gap: 15px;
+    transition: 0.3s;
+    margin-top: 5rem;
+    
+}
+
+/*Diseño responsivo*/
+
+.contenedor-galeria .contenedor-galeria__opcion{
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 25rem;
+    border-radius: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    
+}
+
+.contenedor-galeria .contenedor-galeria__opcion .contenedor-galeria__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor-galeria .contenedor-galeria__opcion,
+.contenedor-galeria .contenedor-galeria__opcion .contenedor-galeria__img{
+    transition: 0.2s;
+}
+
+.contenedor-galeria .contenedor-galeria__opcion .contenido{
+    transition: 1.5s ease;
+}
+
+
+
+
+
+.contenedor-galeria span .contenido_titulo{
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 4px;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    color:var(--blanco);
+    font-family: var(--fuente-titulos);
+    text-align: center;
+}
+
+.contenedor-galeria .contenido__texto{
+    color:var(--blanco);
+    font-size: 2rem;
+    width: 100%;
+}
+
+.contenedor-galeria .contenedor-galeria__opcion .contenido{
+    position: absolute;
+    top: 15;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    color:#ffffff;
+    padding: 15px;
+    background: linear-gradient(0deg, rgb(0 0 0 / 90%) 70%,
+    rgb(255 255 255 / 0%) 100%
+);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.contenedor-galeria:hover{
+    gap: 0;
+}
+
+.contenedor-galeria .contenedor-galeria__opcion .contenido .contenido_span{
+        position: absolute;
+        z-index: 3;
+        left: 50%;
+        bottom: 0px;
+        translate: -50%;
+        scale: 0.85;
+        visibility: hidden;
+        opacity: 0;
+}
+
+.contenedor-galeria .contenedor-galeria__opcion:hover{
+    flex: 0 1 300px;
+    scale: 1.2;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+.contenedor-galeria .contenedor-galeria__opcion:hover .contenido{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor-galeria .contenedor-galeria__opcion_hover .contenido_span{
+    scale: 1;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@media (max-width: 768px ) {
+   .contenedor-galeria{
+    height: auto;
+    flex-direction: column;
+   }
+
+
+
+    .contenedor-galeria .contenido_titulo {
+        font-size: 90rem; /* Ajusta el tamaño del título */
+    }
+
+    .contenedor-galeria .contenido__texto {
+        font-size: 2rem; /* Ajusta el tamaño del texto */
+    }
+
+    .contenedor-galeria .contenedor-galeria__opcion:hover{
+        flex: 0 1 400px;
+        scale: 1;
+        z-index: 10;
+        opacity: 1;
+    }
+    
+    
+
+
+}
