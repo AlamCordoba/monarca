@@ -17,14 +17,16 @@
 /*Hero section*/
 .hero{
     background-image: url(/img/sustentabilidad/banner.jpg);
-    height: 60rem;
+    min-height: 60rem;
     background-repeat: no-repeat;
-    background-size: cover; 
-    
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:bottom;
+
 }
 
 
-.hero__contenido{
+.contenido-hero{
     display: block;
     text-align: center;
     align-items: center;
@@ -33,13 +35,27 @@
     animation: both;
     padding: 1rem;
     font-family: var(--fuente-de-textos);
+    padding: 10rem;
+    animation-name: colocarInformacion;
+    animation-duration: 8s;
+    
+}
+
+.contenido-hero p {
+    font-size: 3rem;
+    text-align: center;
+    animation-name: colocarInformacion;
+}
+
+@keyframes colocarInformacion{
+    0% {opacity: 0;}
+    50%{ opacity: 1;}
 }
 
 
-
 @media (max-width: 768px) {
-    .hero__contenido{
-        font-size: 7.5rem;
+    .contenido-hero p{
+        font-size: 2.5rem;
     }
 }
 
@@ -57,7 +73,7 @@
 
 .hero__contenido__logo{
     margin-top: 10rem;
-    width: 20rem;
+    width: 25rem;
 }
 
 
@@ -153,6 +169,7 @@
     padding-top: 5rem;
     text-align: justify;
     gap: 3rem;
+    padding-bottom: 10rem;
     
 }
 
@@ -160,6 +177,8 @@
     max-width: 100%;
     width: 80rem;
     border-radius: 15px;
+    width: 80rem;
+    height: 50rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
