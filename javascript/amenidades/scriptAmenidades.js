@@ -1,41 +1,24 @@
+//Animaciones de rectangulos amarillos en amenidades
 document.addEventListener("DOMContentLoaded", function () {
-    const rectangle = document.querySelector(".rectangle");
+    function initAnimation(className) {
+        const elements = document.querySelectorAll(className);
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                rectangle.classList.add("expand");
-            } 
-        });
-    }, { threshold: 0.5 }); // Se activa cuando el 50% del rectángulo es visible
+        if (elements.length > 0) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("expand");
+                    }
+                });
+            }, { threshold: 0.5 }); 
 
-    observer.observe(rectangle);
-});
+            elements.forEach(element => observer.observe(element));
+        } else {
+            console.error(`Elementos con la clase ${className} no encontrados`);
+        }
 
-document.addEventListener("DOMContentLoaded", function () {
-    const rectangle = document.querySelector(".cuadrado");
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                rectangle.classList.add("expand");
-            } 
-        });
-    }, { threshold: 0.5 }); // Se activa cuando el 50% del rectángulo es visible
-
-    observer.observe(rectangle);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const rectangle = document.querySelector(".rombo");
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                rectangle.classList.add("expand");
-            } 
-        });
-    }, { threshold: 0.5 }); // Se activa cuando el 50% del rectángulo es visible
-
-    observer.observe(rectangle);
-});
+    }
+    initAnimation(".rectangle");
+    initAnimation(".cuadrado");
+    initAnimation(".rombo");
+})

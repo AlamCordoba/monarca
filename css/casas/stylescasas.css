@@ -77,8 +77,6 @@
 }
 
 /*CSS para el carrusel de los trabajadores de la constructora*/
-
-
 .hidden-text {
   display: none;
 }
@@ -181,7 +179,6 @@ body {
 
 
 /*AQUI ESTA UBICADO EL CSS PARA LA DESCRIPCION DE LOS SERVICIOS DE CONSTRUCCION*/
-
 .yellow-box {
   width: 60vw;
   background-color: var(--color-amarillo);
@@ -209,7 +206,6 @@ body {
   font-weight: 500;
 }
 
-/* Clase que activa la animación */
 .yellow-box.show {
   opacity: 1;
   transform: translateY(0);

@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         entry.target.classList.add("expand");
                     }
                 });
-            }, { threshold: 0.5 }); // Se activa cuando el 50% del elemento es visible
+            }, { threshold: 0.5 }); 
 
             elements.forEach(element => observer.observe(element));
         } else {
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let elements = document.querySelectorAll(className);
         if (elements.length > 0) {
             window.addEventListener("scroll", () => handleScroll(elements));
-            handleScroll(elements); // Llamar una vez al cargar la página en caso de que ya sea visible
+            handleScroll(elements); 
         }
     }
 
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     initAnimation(".containerTitleClients");
 });
 
-//Función para el funcionamiento del slider
+//Función para el funcionamiento del slider de casas
 
 document.addEventListener("DOMContentLoaded", function () {
     const sliderImages = document.querySelectorAll(".imgSlider");
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//PRUEBA PARA FUNCIÓN DE BOTONES PARA SLIDER DE OPINIONES CLIENTES 2
+//PRUEBA PARA FUNCIÓN DE BOTONES PARA SLIDER DE OPINIONES CLIENTES EN LOTES
 let currentSlide = 0;
 
 function moveSlider(index) {
