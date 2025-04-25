@@ -1,3 +1,16 @@
+
+:root {
+    /*colores a utilizar*/
+    --color-amarillo: #f6c42a;
+    --color-gris: #606060;
+    --blanco: #fff;
+    /*color texto*/
+    --color-texto: #333333;
+    /*fuentes de texto*/
+    --titulos: "Roboto", sans-serif;
+    --texto: "Rubik", sans-serif;
+  }
+
 .hero-promo{
     height: 80vh;
     overflow: hidden;
@@ -302,6 +315,7 @@
     margin: .5rem;
     position:relative;
     height: 60rem;
+    
 }
 
 
@@ -326,4 +340,95 @@
     place-content: center;
 
     
+}
+
+
+/*Diseño de los titulos */
+
+.amenidades-rentangulo{
+    width: 140rem;
+    position: absolute;
+    background-color:rgba(246, 196, 42, .8);
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    text-align: center;
+    margin-left: 25rem;
+    margin-top: 1rem;
+    height: 6rem;
+    animation: aparecion;
+    animation-duration: 3s ;    
+    animation-fill-mode: forwards;
+    animation-timeline: scroll();
+
+
+}
+
+
+@keyframes aparecion {
+    from {left: -50px;}
+    to {left: 40px; background-color: rgba(246, 196, 42, .8);}
+}
+
+
+.amenidades-texto{
+    justify-content: center;
+    display: flex;
+
+}
+
+.amenidades-texto h3{
+    display: flex;
+    align-items: center;
+    font-size: 3.5rem;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/*Proyectos*/
+
+.proyectos-texto{
+    background-color: rgba(246, 196, 42, .8);
+    width: 150rem;
+    height: 5rem;
+    left: 15rem;
+    position: absolute;
+    margin-top: 1rem;
+}
+
+.proyectos-texto h3{
+    display: flex;
+    align-items:flex-start;
+    font-size: 3rem;
+}
+
+.proyecto-restangulo{
+    width: 100rem;
+    position: absolute;
+    background-color:rgba(246, 196, 42, .8);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 25rem;
+    margin-top: 1rem;
+    height: 6rem;
+}
+
+.proyecto-texto{
+    justify-content: center;
+    display: flex;
+}
+
+.proyecto-texto h3{
+    display: flex;
+    align-items: center;
+    font-size: 3.5rem;
+    justify-content: center;
+    text-transform: uppercase;
 }
