@@ -1,4 +1,4 @@
-
+ 
 :root {
     /*colores a utilizar*/
     --color-amarillo: #f6c42a;
@@ -19,15 +19,47 @@
     border-top-color: #F6C42A;
     border-top-width: 6px;
     border-top-style: solid;
-
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.bg-video{
+.my_video{
     object-fit: inherit;
     width: 100%;
     height: 100%;
     position: absolute;
-    
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:900px) and (max-width:1440px) {
+    .hero-promo{
+        height: 55vh;
+    }
+    .my_video{
+        align-items: center;
+        object-fit: inherit;
+        width: 88%;
+        height: 100%;
+        position: absolute; 
+        margin: 0 10rem;
+    }
+}
+
+@media (min-width:1050px) and (max-width:1680px) {
+    .hero-promo{
+        height: 75vh;
+    }
+    .my_video{
+        align-items: center;
+        object-fit: inherit;
+        width: 85%;
+        height: 100%;
+        position: absolute; 
+        margin-left: 12rem;
+    }
 }
 
 /*Medias para video para imagenes*/
@@ -35,7 +67,7 @@
     .hero-promo{
         height: 45vh;
     }
-    .bg-video{
+    .my_video{
         object-fit: inherit;
         width: 100%;
         height: 100%;
@@ -50,12 +82,14 @@
 
 .bg-boton{
     position: relative;
-    display: block;
+    display: flex;
     justify-content: center;
-    text-align: center;
-    padding-top: 50rem;
-}
+    align-items: center;
+    padding-top: 40rem;
+    
 
+    
+}
 
 .boton-incio{
     background-color: #F6C42A;  
@@ -66,7 +100,6 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
     cursor: pointer;
-    
 }
 
 
@@ -74,13 +107,14 @@
 @media (min-width:320px) and (max-width:480px) {
     .bg-boton{
         position: relative;
-        display: block;
+        display: flex;
         justify-content: center;
-        text-align: center;
-        padding-top: 25rem;
+        align-items: center;
+        padding-top: 30rem;
         
     }
     .boton-incio{
+        position: absolute;
         background-color: #F6C42A;  
         width: 15rem;
         height: 5rem;
@@ -121,7 +155,7 @@
         display: block;
         justify-content: center;
         text-align: center;
-        padding-top: 60rem;
+        padding-top: 30rem;
         
     }
     .boton-incio{
