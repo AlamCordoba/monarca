@@ -21,4 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     initAnimation(".rectangle");
     initAnimation(".cuadrado");
     initAnimation(".rombo");
+    initAnimation(".amenidades-rentangulo");
+    initAnimation(".proyecto-restangulo");
 })
