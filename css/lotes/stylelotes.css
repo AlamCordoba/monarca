@@ -132,7 +132,7 @@
   font-weight: 500;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   color: var(--color-texto);
   text-align: center;
 }
@@ -142,7 +142,7 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   text-align: justify;
   color: var(--color-texto);
 }
@@ -230,13 +230,13 @@
 }
 
 .opinion-text {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   color: var(--color-texto);
   font-family: var(--texto);
 }
 
 .opinion-author {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: var(--color-texto);
   font-family: var(--titulos);
 }
