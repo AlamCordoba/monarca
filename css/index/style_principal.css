@@ -196,7 +196,23 @@
 }
 
 
-
+.boton_info{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        color: black;
+        justify-content: center;
+        position: relative;
+        background-color: #F6C42A;  
+        width: 20rem;
+        height: 5rem;
+        border-radius: 3rem;
+        font-size: 2rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-transform: uppercase;
+        cursor: pointer;
+    
+}
 @media (min-width:768px){
     .historia{
         display: grid;
@@ -313,8 +329,14 @@
     color: white;
 }
 
+.boton-ver{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
 .compromiso-verde_texto{
-    padding-top: 3rem;
+    padding-top: 6rem;
     font-size: 2.5rem;
     display: inline-block;
     text-transform:capitalize;
@@ -372,7 +394,11 @@
     object-fit: cover;
     width: auto;
     place-content: center;
+}
 
+.proyectos-principal__imagen a{
+    display: flex;
+    position: absolute;
     
 }
 
