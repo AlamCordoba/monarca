@@ -493,3 +493,40 @@
     opacity: 1;
 }
 
+/*Ajuste del boton para pantallas que van de 900 px a 1024*/
+@media (min-width: 900px) and (max-width: 1024px) {
+       .hero-promo{
+        height: 65vh;
+    }
+    .my_video{
+        align-items: center;
+        object-fit: inherit;
+        width: 85%;
+        height: 100%;
+        position: absolute; 
+        margin-left: 8rem;
+    }
+
+    .bg-boton{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40rem;
+        
+    }
+    .boton-incio{
+        position: relative;
+        background-color: #F6C42A;  
+        width: 15rem;
+        height: 5rem;
+        border-radius: 3rem;
+        font-size: 1.5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+}
+
+
