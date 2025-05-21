@@ -211,40 +211,32 @@
 
     <!--Seccion de formulario-->
 
-      <div class="form-box">
-       <div class="form-item">
-        <h2>Contactanos</h2>
-        <p>Te responderemos en el menor tiempo posible, gracias</p>
-        <form action="https://formsubmit.co/2bd6667855c33accfb6e3abcd862cad0" method="POST">
-        <input
-          type="text"
-          class="form-parameter-name"
-          name="nombre"
-          id="nombre"
-          placeholder="Nombre"
-          required
-        />
-        <input type="email" class="form-parameter-name" name="email" id="mail" placeholder="Email" required/>
-        <textarea class="form-parameter-message" name="message" id="message" placeholder="Mensaje" required></textarea>
-        <input type="submit" value="Enviar"class="form-btn-send"/>
+     <div class="contact-container">
+    <div class="form-section">
+      <h2>Contact Us</h2>
+      <p>Nos puedes contactar en cualquier momento. Te responderemos lo más pronto posible!</p>
+      <form action="https://formsubmit.co/2bd6667855c33accfb6e3abcd862cad0" method="POST">
+        <input type="text" name="name" placeholder="Nombre" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
         <input type="hidden" name="_next" value="http://localhost:5500/index.html" />
-       </div>
-      <div class="form-item-grid">
-        <div class="gray-box">
-          <h2>
-            INFO
-          </h2>
-          <div class="info-item">
-            <i class="fa fa-envelope " aria-hidden="true"></i>
-            <span>monarca@mail.com</span>
-          </div>
+      </form>
+    </div>
 
-        </div>
-        <div class="rectangle-yellow-box">
-
-        </div>
+    <div class="info-section">
+      <h2>Info</h2>
+      <div class="info-item"><span><i class="fa fa-envelope" aria-hidden="true"></i></span>monarca@mail.com</div>
+      <div class="info-item"><span><i class="fa fa-phone" aria-hidden="true"></i></span> +24 56 89 146</div>
+      <div class="info-item"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> 14 Greenroad St.</div>
+      <div class="info-item"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span> 09:00 - 18:00</div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61556113793685"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/monarca_residencial_xico/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://wa.me/2281942115?text=Que tal buenos dias+ quisiera información"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
       </div>
-     </div>
+    </div>
+  </div>
 
 
 
