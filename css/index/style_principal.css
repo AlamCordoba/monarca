@@ -23,6 +23,8 @@
   align-items: center;
 }
 
+
+
 .my_video {
   object-fit: inherit;
   width: 100%;
@@ -32,59 +34,47 @@
   align-items: center;
 }
 
-@media (min-width: 900px) and (max-width: 1440px) {
-  .hero-promo {
-    height: 55vh;
-  }
-  .my_video {
-    align-items: center;
-    object-fit: inherit;
-    width: 88%;
-    height: 100%;
-    position: absolute;
-    margin: 0 10rem;
-  }
+@media (min-width:320px) and (max-width: 768px) and  (orientation: portrait){
+      .hero-promo{
+          height: 45rem;
+      }
+
+      .bg-boton {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 35rem;
+    }
+
+    .boton-incio {
+      background-color:var(--color-amarillo);
+      width: 20rem;
+      height: 6rem;
+      border-radius: 3rem;
+      font-size: 2rem;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+ 
 }
 
-@media (min-width: 1050px) and (max-width: 1680px) {
-  .hero-promo {
-    height: 75vh;
-  }
-  .my_video {
-    align-items: center;
-    object-fit: inherit;
-    width: 85%;
-    height: 100%;
-    position: absolute;
-    margin-left: 12rem;
-  }
-}
+@media (min-width:320px) and (max-width: 768px) and  (orientation: landscape){
+   .hero-promo{
+      height: 60rem;
+   }
 
-/*Medias para video para imagenes*/
-@media (min-width: 320px) and (max-width: 1048px) {
-  .hero-promo {
-    height: 45vh;
-  }
-  .my_video {
-    object-fit: inherit;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-  }
-}
-
-/*Boton*/
-
-.bg-boton {
+   .bg-boton {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 40rem;
+  padding-top: 45rem;
 }
 
 .boton-incio {
-  background-color: #f6c42a;
+  background-color:var(--color-amarillo);
   width: 20rem;
   height: 6rem;
   border-radius: 3rem;
@@ -93,14 +83,82 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+ 
 
+}
+
+
+
+
+@media (min-width:844px) and  (orientation: landscape){
+   .hero-promo{
+      height: 60rem;
+   }
+
+   .bg-boton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 45rem;
+}
+
+.boton-incio {
+  background-color:var(--color-amarillo);
+  width: 20rem;
+  height: 6rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+}
+
+@media (min-width:900px) and  (orientation: portrait){
+   .hero-promo{
+      height: 60rem;
+   }
+
+   .bg-boton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 45rem;
+}
+
+.boton-incio {
+  background-color:var(--color-amarillo);
+  width: 20rem;
+  height: 6rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+}
+ 
+ 
+
+
+
+
+
+/*Boton*/
+
+
+
+
+/*
 @media (min-width: 320px) and (max-width: 480px) {
   .bg-boton {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 30rem;
+    padding-top: 45rem;
   }
   .boton-incio {
     position: absolute;
@@ -115,14 +173,11 @@
   }
 }
 
-/*Media query par pantallas de 768px a 1024px*/
+
 @media (min-width: 768px) and (max-width: 890px) {
   .bg-boton {
-    position: relative;
-    display: block;
-    justify-content: center;
-    text-align: center;
-    padding-top: 35rem;
+    padding-top: 45rem;
+    
   }
   .boton-incio {
     background-color: #f6c42a;
@@ -154,7 +209,7 @@
     text-transform: uppercase;
     cursor: pointer;
   }
-}
+}*/
 
 /*Apartado de nuestra historia*/
 /*Historia*/
@@ -621,43 +676,6 @@ form button:hover {
   .social-icons a {
     font-size: 18px;
   }
-}
-
-
-/*Ajuste del boton para pantallas que van de 900 px a 1024*/
-@media (min-width: 900px) and (max-width: 1024px) {
-       .hero-promo{
-        height: 65vh;
-    }
-    .my_video{
-        align-items: center;
-        object-fit: inherit;
-        width: 85%;
-        height: 100%;
-        position: absolute; 
-        margin-left: 8rem;
-    }
-
-    .bg-boton{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 40rem;
-        
-    }
-    .boton-incio{
-        position: relative;
-        background-color: #F6C42A;  
-        width: 15rem;
-        height: 5rem;
-        border-radius: 3rem;
-        font-size: 1.5rem;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-transform: uppercase;
-        cursor: pointer;
-    }
-
 }
 
 
