@@ -678,4 +678,122 @@ form button:hover {
   }
 }
 
+/*Diseño de pagos*/
+.galeria {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.img-grande,
+.img-chicas {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  height: 600px;
+}
+
+.img-grande img,
+.img-chica img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.img-chicas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  height: 600px;
+}
+
+.img-chica {
+  flex: 1;
+  position: relative;
+}
+
+.img-grande img:hover,
+.img-chica img:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+/* Info sobrepuesta */
+.info-superpuesta {
+  font-family: var(--texto);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: rgba(255, 213, 102, 0.95);
+  padding: 15px 20px;
+  border-radius: 8px;
+  color: #000;
+  max-width: 80%;
+}
+
+.info-superpuesta h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.info-superpuesta ul {
+  list-style: none;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.centro {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(255, 213, 102, 0.95);
+}
+
+.aparta {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.precio {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/*Responsive de precios*/
+@media (max-width: 768px) {
+  .galeria {
+    flex-direction: column;
+  }
+
+  .img-chicas {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+  .img-grande,
+  .img-chica {
+    height: 250px;
+    flex: 1 1 100%;
+  }
+  
+
+  .img-chica img {
+    height: 100%;
+  }
+
+  .info-superpuesta {
+  padding: 1px 5px;
+}
+
+
+  
+}
+
 
