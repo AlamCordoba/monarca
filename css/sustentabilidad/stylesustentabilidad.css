@@ -274,7 +274,7 @@
 
 .contenedor-galeria span .contenido_titulo{
     font-weight: bold;
-    font-size: 23px;
+    font-size: 2rem;
     line-height: 4px;
     margin-bottom: 3px;
     white-space: nowrap;
@@ -285,7 +285,7 @@
 
 .contenedor-galeria .contenido__texto{
     color:var(--blanco);
-    font-size: 2rem;
+    font-size: 1.5em;
     width: 100%;
 }
 

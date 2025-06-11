@@ -230,16 +230,30 @@
 }
 
 .opinion-text {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--color-texto);
   font-family: var(--texto);
 }
 
-.opinion-author {
-  font-size: 1.5rem;
-  color: var(--color-texto);
-  font-family: var(--titulos);
+.icons_opinion{
+    display: inline-block;
+    color: var(--blanco);
+    text-align: center;
+    font-size: 3rem;
 }
+
+.info-item {
+  font-family: var(--texto);
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+}
+
+.info-item i {
+  color: var(--color-texto);
+}
+
+
 
 /* Estilos para los puntos indicadores */
 .dots-container {
